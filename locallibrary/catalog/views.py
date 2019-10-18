@@ -6,6 +6,7 @@ from django.urls import reverse
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.mixins import PermissionRequiredMixin
 from django.http import HttpResponseRedirect
+from django.contrib.auth.decorators import permission_required
 
 from catalog.forms import RenewBookForm
 
@@ -91,6 +92,7 @@ class LoanedBooksAllListView(PermissionRequiredMixin, generic.ListView):
         return BookInstance.objects.filter(status__exact='o').order_by('due_back')
 
 
+@permission_required('catalog.can_mark_returned')
 def renew_book_librarian(request, pk):
     book_instance = get_object_or_404(BookInstance, pk=pk)
 

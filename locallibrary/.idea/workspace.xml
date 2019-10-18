@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/book_renew_librarian.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/bookinstance_list_borrowed_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/bookinstance_list_borrowed_all.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -93,7 +94,21 @@
       <option name="project" value="LOCAL" />
       <updated>1571381078200</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="&quot;Fourth Commit&quot;">
+      <created>1571393004403</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1571393004403</updated>
+    </task>
+    <task id="LOCAL-00007" summary="&quot;Fifth Commit&quot;">
+      <created>1571393140254</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1571393140254</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,6 +127,7 @@
     <MESSAGE value="&quot;Second Commit&quot;" />
     <MESSAGE value="&quot;Third Commit&quot;" />
     <MESSAGE value="&quot;Fourth Commit&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Fourth Commit&quot;" />
+    <MESSAGE value="&quot;Fifth Commit&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Fifth Commit&quot;" />
   </component>
 </project>
