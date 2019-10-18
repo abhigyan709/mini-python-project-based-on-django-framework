@@ -49,6 +49,11 @@ class BookListView(generic.ListView):
     # return Book.objects.filter(title__icontains='war')[:5]  # get 5 books containing the title war
 
 
+class LanguageListView(generic.ListView):
+    model = Language
+    paginate_by = 10
+
+
 class BookDetailView(generic.DetailView):
     model = Book
 
