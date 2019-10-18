@@ -77,5 +77,12 @@ class LoanedBooksByUserListView(LoginRequiredMixin, generic.ListView):
 
 
 # Added as part of challenge!
-#class LoanedBooksAllListView(PermissionRequiredMixin, generic.ListView):
-    """Generic class-based view listing all books on loan. Only visible to """
+class LoanedBooksAllListView(PermissionRequiredMixin, generic.ListView):
+    """Generic class-based view listing all books on loan. Only visible to user with can_mark_returned permission."""
+    model = BookInstance
+    permission_required = 'catalog.can_mark_returned'
+    template_name = 'catalog/bookinstance_list_borrowed_all.html'
+    paginate_by = 10
+
+    def get_queryset(self):
+        return BookInstance.objects.filter(status__exact='o').order_by('due_back')
