@@ -2,15 +2,15 @@
 
 {% block content %}
   <h1>Language List</h1>
-  {% if book_list %}
+  {% if languages_list %}
   <ul>
-    {% for book in book_list %}
+    {% for language in languages_list %}
       <li>
-        <a href="{{ languages.get_absolute_url }}">{{ book.title }}</a> ({{book.author}})
+        <a href="{{ language.get_absolute_url }}">{{ language }}</a>
       </li>
     {% endfor %}
   </ul>
   {% else %}
-    <p>There are no books in the library.</p>
+    <p>There are no languages in the library.</p>
   {% endif %}
 {% endblock %}

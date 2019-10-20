@@ -1,10 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
+    <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="&quot;New Commit&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/language_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/language_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/.idea/myshop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/myshop/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/myshop/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/myshop/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/myshop/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/shop/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/shop/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/shop/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/shop/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/shop/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/shop/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/shop/static/cssfile/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/shop/static/cssfile/pdf.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/shop/templates/shop/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/shop/templates/shop/product/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/shop/templates/shop/product/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/shop/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/shop/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myshop/shop/views.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
