@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -250,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571661656643</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="&quot;PEP8 Guidelines Used&quot;">
+      <created>1571663201405</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1571663201405</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -285,6 +292,7 @@
     <MESSAGE value="&quot;Added login button to the Top BAR&quot;" />
     <MESSAGE value="&quot;Avalible languages page added&quot;" />
     <MESSAGE value="&quot;Genres List Added to the Project&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Genres List Added to the Project&quot;" />
+    <MESSAGE value="&quot;PEP8 Guidelines Used&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;PEP8 Guidelines Used&quot;" />
   </component>
 </project>

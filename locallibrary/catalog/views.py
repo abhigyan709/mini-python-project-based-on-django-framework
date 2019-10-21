@@ -3,17 +3,15 @@ import datetime
 from django.shortcuts import render, get_object_or_404
 from catalog.models import Book, Author, BookInstance, Genre, Language, About
 from django.views import generic
-from django.urls import reverse
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.auth.mixins import PermissionRequiredMixin
+from django.urls import reverse, reverse_lazy
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import permission_required
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
-from django.urls import reverse_lazy
 from catalog.forms import RenewBookForm
 
 
-# views created here, new views have to append
+# views created here, new views have to append like user owned library, donate books, lend own books
 def index(request):                                             # Generate Counts For Some Highlight Object to Show Data
     num_books = Book.objects.all().count()                      # View function for Home Page
     num_instances = BookInstance.objects.all().count()

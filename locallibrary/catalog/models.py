@@ -5,7 +5,6 @@ from django.contrib.auth.models import User
 from datetime import date
 
 
-# Model is Created here.
 class About(models.Model):
     about = models.TextField(max_length=3500, help_text='About the Website & Project')
 
@@ -51,7 +50,9 @@ class Book(models.Model):
     author = models.ForeignKey('Author', on_delete=models.SET_NULL, null=True)
 
     summary = models.TextField(max_length=1000, help_text='Enter a brief description os the book')
-    isbn = models.CharField('ISBN', max_length=13, help_text='13 Character <a href="https://www.isbn-international.org/content/what-isbn">ISBN number</a>')
+    isbn = models.CharField('ISBN',
+                            max_length=13,
+                            help_text='13 Character ISBN number. International Standard Book Number.')
 
     # ManyToManyField used because genre can contain many books. Books can cover many genre.
     # genre class has already been defined so we can specify the above object
