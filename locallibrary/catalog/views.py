@@ -5,7 +5,7 @@ from django.views import generic
 from django.urls import reverse
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.mixins import PermissionRequiredMixin
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth.decorators import permission_required
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
@@ -55,12 +55,9 @@ class LanguageListView(generic.ListView):
     paginate_by = 10
 
 
-class AboutPageView(generic.DetailView):
+class AboutPageView(generic.ListView):
     model = About
-
-    def about_view(request):
-        about = get_object_or_404(About)
-        return render(request, 'catalog/about/list.html', context={'about': about})
+    paginate_by = 10
 
 
 class BookDetailView(generic.DetailView):

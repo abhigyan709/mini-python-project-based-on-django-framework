@@ -13,8 +13,8 @@ class About(models.Model):
         return self.about
 
     def get_absolute_url(self):
-        """Returns the url to access a detail record for this book."""
-        return reverse('aboutus', args=[str(self.id)])
+        return reverse('about',)
+
 
 class Genre(models.Model):
 

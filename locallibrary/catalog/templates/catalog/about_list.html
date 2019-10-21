@@ -1,5 +1,16 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
-
+  <h1>About List</h1>
+  {% if about_list %}
+  <ul>
+    {% for about in about_list %}
+      <li>
+        <a href="{{ about.get_absolute_url }}">{{ about.id }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>There is nothing to show about in the library.</p>
+  {% endif %}
 {% endblock %}
