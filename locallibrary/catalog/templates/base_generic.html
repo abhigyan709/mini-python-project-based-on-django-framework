@@ -19,6 +19,7 @@
           <li><a href="{% url 'books' %}">All Books</a></li>
           <li><a href="{% url 'authors' %}">All Authors</a></li>
             <li><a class="active" href="{% url 'about' %}">About</a></li>
+         <!-- <li><a class="active" href="{% url 'login' %}">LogIn</a></li> -->
           {% if user.is_authenticated %}
      <li>User: {{ user.get_username }}</li>
      <li><a href="{% url 'my-borrowed' %}">My Borrowed</a></li>
