@@ -1,6 +1,6 @@
 import datetime
 from django.shortcuts import render, get_object_or_404
-from catalog.models import Book, Author, BookInstance, Genre, Language
+from catalog.models import Book, Author, BookInstance, Genre, Language, About
 from django.views import generic
 from django.urls import reverse
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -9,11 +9,10 @@ from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import permission_required
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
-
 from catalog.forms import RenewBookForm
 
 
-# Create your views here.
+# views created here, new views have to append
 def index(request):
     """View function for home page of site."""
     # Generate counts of some of the main objects
@@ -24,8 +23,6 @@ def index(request):
     num_authors = Author.objects.count()  # The 'all()' is implied by default.
     num_languages = Language.objects.count()
     num_genres = Genre.objects.count()
-
-
 
     # Number of visits to this view, as counted in the session variable
     num_visits = request.session.get('num_visits', 0)
@@ -56,6 +53,14 @@ class BookListView(generic.ListView):
 class LanguageListView(generic.ListView):
     model = Language
     paginate_by = 10
+
+
+class AboutPageView(generic.DetailView):
+    model = About
+
+    def about_view(request):
+        about = get_object_or_404(About)
+        return render(request, 'catalog/about/list.html', context={'about': about})
 
 
 class BookDetailView(generic.DetailView):

@@ -6,6 +6,16 @@ from datetime import date
 
 
 # Model is Created here.
+class About(models.Model):
+    about = models.TextField(max_length=3500, help_text='About the Website & Project')
+
+    def __str__(self):
+        return self.about
+
+    def get_absolute_url(self):
+        """Returns the url to access a detail record for this book."""
+        return reverse('aboutus', args=[str(self.id)])
+
 class Genre(models.Model):
 
     """Model Representing a Book Genre"""

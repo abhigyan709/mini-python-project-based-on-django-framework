@@ -1,9 +1,14 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
-  <h1>Library on the Go</h1>
+  <h1><div class="topnav">
+  <a class="active" href="{% url 'index' %}">Home</a>
+  <a class="active" href="{% url 'aboutus' %}">About</a>
+  <a href="contact">Contact</a>
+  <input type="text" placeholder="Search..">
+    </div></h1>
   <p>Welcome to LocalLibrary, a website developed by <em>Team.Py</em>!</p>
-  <h2>Dynamic content</h2>
+
   <p>The library has the following record counts:</p>
   <ul>
     <li><strong>Books:</strong> {{ num_books }}</li>
