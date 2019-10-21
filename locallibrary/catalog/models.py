@@ -26,6 +26,9 @@ class Genre(models.Model):
         """String for representing the Model Object."""
         return self.name
 
+    def get_absolute_url(self):
+        return reverse('genre',)
+
 
 class Language(models.Model):
     """Model representing a Language (e.g. English, French, Japanese, etc.)"""

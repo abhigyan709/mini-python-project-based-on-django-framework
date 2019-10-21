@@ -42,6 +42,11 @@ def index(request):
     return render(request, 'index.html', context=context)
 
 
+class GenreListView(generic.ListView):
+    model = Genre
+    paginate_by = 10
+
+
 class BookListView(generic.ListView):
     model = Book
     paginate_by = 10

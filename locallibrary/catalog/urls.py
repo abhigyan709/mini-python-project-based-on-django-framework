@@ -10,6 +10,7 @@ urlpatterns = [
          views.AuthorDetailView.as_view(), name='author-detail'),
     path('about/', views.AboutPageView.as_view(), name = 'about'),
     path('language/', views.LanguageListView.as_view(), name = 'language'),
+    path('genre/', views.GenreListView.as_view(), name = 'genre'),
 ]
 urlpatterns += [
     path('mybooks/', views.LoanedBooksByUserListView.as_view(), name='my-borrowed'),
