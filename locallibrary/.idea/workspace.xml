@@ -3,33 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/about_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/about_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite/.idea/mysite.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite/blog/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite/blog/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite/blog/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite/blog/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite/blog/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite/blog/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite/blog/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite/blog/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite/mysite/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite/mysite/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite/mysite/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite/mysite/wsgi.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,8 +45,13 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="C:/mysite" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="Push.Settings">
+    <force-push-targets>
+      <force-push-target remote-path="origin" branch="master" />
+    </force-push-targets>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -236,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571632615398</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="&quot;Need Some changes at About page&quot;&#10;&quot;New commit after rename of the project&quot;">
+      <created>1571636208997</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1571636208998</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
