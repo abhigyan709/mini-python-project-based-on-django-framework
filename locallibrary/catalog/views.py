@@ -1,3 +1,4 @@
+# NOTE: THIS PROJECT FOLLOWS PEP8(Python Enhancement Proposal Guidelines)
 import datetime
 from django.shortcuts import render, get_object_or_404
 from catalog.models import Book, Author, BookInstance, Genre, Language, About
@@ -5,7 +6,7 @@ from django.views import generic
 from django.urls import reverse
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.mixins import PermissionRequiredMixin
-from django.http import HttpResponseRedirect, HttpResponse
+from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import permission_required
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
@@ -13,21 +14,15 @@ from catalog.forms import RenewBookForm
 
 
 # views created here, new views have to append
-def index(request):
-    """View function for home page of site."""
-    # Generate counts of some of the main objects
-    num_books = Book.objects.all().count()
+def index(request):                                             # Generate Counts For Some Highlight Object to Show Data
+    num_books = Book.objects.all().count()                      # View function for Home Page
     num_instances = BookInstance.objects.all().count()
-    # Available books (status = 'a')
-    num_instances_available = BookInstance.objects.filter(status__exact='a').count()
-    num_authors = Author.objects.count()  # The 'all()' is implied by default.
+    num_instances_available = BookInstance.objects.filter(status__exact='a').count()    # Available books (status = 'a')
+    num_authors = Author.objects.count()                                            # The 'all()' is implied by default.
     num_languages = Language.objects.count()
     num_genres = Genre.objects.count()
-
-    # Number of visits to this view, as counted in the session variable
-    num_visits = request.session.get('num_visits', 0)
-    request.session['num_visits'] = num_visits+1
-
+    num_visits = request.session.get('num_visits', 0)                                   # Number of visits to this view,
+    request.session['num_visits'] = num_visits+1                                    # as counted in the session variable
     context = {
         'num_books': num_books,
         'num_instances': num_instances,
@@ -37,35 +32,30 @@ def index(request):
         'num_languages': num_languages,
         'num_genres': num_genres
     }
-
-    # Render the HTML template index.html with the data in the context variable
-    return render(request, 'index.html', context=context)
+    return render(request, 'index.html', context=context)                # Rendering the HTML Request Page To index.html
 
 
-class GenreListView(generic.ListView):
+class GenreListView(generic.ListView):                                                                # Genres List View
     model = Genre
     paginate_by = 10
 
 
-class BookListView(generic.ListView):
+class BookListView(generic.ListView):                                                                   # Book List View
     model = Book
     paginate_by = 10
 
-    # def get_queryset(self):
-    # return Book.objects.filter(title__icontains='war')[:5]  # get 5 books containing the title war
 
-
-class LanguageListView(generic.ListView):
+class LanguageListView(generic.ListView):                                                           # Language List View
     model = Language
     paginate_by = 10
 
 
-class AboutPageView(generic.ListView):
+class AboutPageView(generic.ListView):                                                                 # About Page View
     model = About
     paginate_by = 10
 
 
-class BookDetailView(generic.DetailView):
+class BookDetailView(generic.DetailView):                                         # Detailed view of the available books
     model = Book
 
     def book_detail_view(request, primary_key):
@@ -73,14 +63,12 @@ class BookDetailView(generic.DetailView):
         return render(request, 'catalog/book_detail.html', context={'book': book})
 
 
-class AuthorListView(generic.ListView):
-    """Generic class-based list view for a list of authors."""
+class AuthorListView(generic.ListView):                           # Generic class-based list view for a list of authors.
     model= Author
     paginate_by = 10
 
 
-class AuthorDetailView(generic.DetailView):
-    """Generic class-based detail view for an author."""
+class AuthorDetailView(generic.DetailView):                             # Generic class-based detail view for an author.
     model = Author
 
     def author_detail_view(request, primary_key):
@@ -88,8 +76,7 @@ class AuthorDetailView(generic.DetailView):
         return render(request, 'catalog/author_detail.html', context={'author': author})
 
 
-class LoanedBooksByUserListView(LoginRequiredMixin, generic.ListView):
-    """Generic class-based view listing books on loan to current user."""
+class LoanedBooksByUserListView(LoginRequiredMixin, generic.ListView):               # list view for Loaned book by user
     model = BookInstance
     template_name = 'catalog/bookinstance_list_borrowed_user.html'
     paginate_by = 10
@@ -98,7 +85,6 @@ class LoanedBooksByUserListView(LoginRequiredMixin, generic.ListView):
         return BookInstance.objects.filter(borrower=self.request.user).filter(status__exact='o').order_by('due_back')
 
 
-# Added as part of challenge!
 class LoanedBooksAllListView(PermissionRequiredMixin, generic.ListView):
     """Generic class-based view listing all books on loan. Only visible to user with can_mark_returned permission."""
     model = BookInstance
@@ -161,7 +147,6 @@ class AuthorDelete(PermissionRequiredMixin, DeleteView):
     permission_required = 'catalog.can_mark_returned'
 
 
-# Created for the challenege/assignment
 class BookCreate(PermissionRequiredMixin, CreateView):
     model = Book
     fields = '__all__'
