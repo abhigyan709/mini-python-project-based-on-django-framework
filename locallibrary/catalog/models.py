@@ -36,6 +36,9 @@ class Language(models.Model):
         """String for representing the Model object (in Admin site etc.)"""
         return self.name
 
+    def get_absolute_url(self):
+        return reverse('language',)
+
 
 class Book(models.Model):
     title = models.CharField(max_length=200)
@@ -120,5 +123,7 @@ class Author(models.Model):
     def __str__(self):
         """String for representing the model Object."""
         return f'{self.last_name}, {self.first_name}'
+
+
 
 
