@@ -1,5 +1,5 @@
 from django.contrib import admin
-from catalog.models import Author, Genre, Book, BookInstance, Language, About
+from catalog.models import Author, Genre, Book, BookInstance, Language, About, DonateBooks
 
 # Register your models here.
 # admin.site.register(Book)
@@ -8,6 +8,7 @@ admin.site.register(Genre)
 # admin.site.register(BookInstance)
 admin.site.register(Language)
 admin.site.register(About)
+admin.site.register(DonateBooks)
 
 
 class BooksInline(admin.TabularInline):

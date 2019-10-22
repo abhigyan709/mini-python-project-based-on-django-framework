@@ -1,7 +1,7 @@
 # NOTE: THIS PROJECT FOLLOWS PEP8(Python Enhancement Proposal Guidelines)
 import datetime
 from django.shortcuts import render, get_object_or_404
-from catalog.models import Book, Author, BookInstance, Genre, Language, About
+from catalog.models import Book, Author, BookInstance, Genre, Language, About, DonateBooks
 from django.views import generic
 from django.urls import reverse, reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
@@ -81,6 +81,12 @@ class LoanedBooksByUserListView(LoginRequiredMixin, generic.ListView):          
 
     def get_queryset(self):
         return BookInstance.objects.filter(borrower=self.request.user).filter(status__exact='o').order_by('due_back')
+
+
+class DonateBooksByUserListView(LoginRequiredMixin, generic.ListView):
+    model = DonateBooks
+    template_name = 'catalog/donate_list_of_user.html'
+    paginate_by = 10
 
 
 class LoanedBooksAllListView(PermissionRequiredMixin, generic.ListView):
