@@ -85,7 +85,7 @@ class LoanedBooksByUserListView(LoginRequiredMixin, generic.ListView):          
 
 class DonateBooksByUserListView(LoginRequiredMixin, generic.ListView):
     model = DonateBooks
-    template_name = 'catalog/donate_list_of_user.html'
+    template_name = 'catalog/donate_form.html'
     paginate_by = 10
 
 
@@ -130,6 +130,11 @@ def renew_book_librarian(request, pk):
     }
 
     return render(request, 'catalog/book_renew_librarian.html', context)
+
+
+class DonateCreate(LoginRequiredMixin, CreateView):
+    model = DonateBooks
+    fields = '__all__'
 
 
 class AuthorCreate(PermissionRequiredMixin, CreateView):
