@@ -1,5 +1,5 @@
 from django.contrib import admin
-from catalog.models import Author, Genre, Book, BookInstance, Language, About, DonateBooks
+from catalog.models import Author, Genre, Book, BookInstance, Language, About # DonateBooks
 
 # Register your models here.
 # admin.site.register(Book)
@@ -8,7 +8,7 @@ admin.site.register(Genre)
 # admin.site.register(BookInstance)
 admin.site.register(Language)
 admin.site.register(About)
-admin.site.register(DonateBooks)
+
 
 
 class BooksInline(admin.TabularInline):
@@ -20,6 +20,7 @@ class AuthorAdmin(admin.ModelAdmin):
     list_display = ('last_name', 'first_name', 'date_of_birth', 'date_of_death')
     fields = ['first_name', 'last_name', ('date_of_birth', 'date_of_death')]
     inlines = [BooksInline]
+
 
 # register the admin class with the associated model
 admin.site.register(Author, AuthorAdmin)

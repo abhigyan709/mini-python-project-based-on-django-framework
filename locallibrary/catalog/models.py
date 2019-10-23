@@ -129,21 +129,3 @@ class Author(models.Model):
         return f'{self.last_name}, {self.first_name}'
 
 
-class DonateBooks(models.Model):
-    "Model representing the donation for books"
-    name = models.CharField(max_length=100)
-    genre = models.ManyToManyField(Genre, help_text='Select a genre for this Boook')
-    language = models.ForeignKey('Language', on_delete=models.SET_NULL, null=True)
-    author_of_book = models.CharField(max_length=100)
-    price_of_book = models.DecimalField(max_digits=10, decimal_places=3)
-    year_of_publication = models.DateField(null=True, blank=True)
-
-    class Meta:
-        ordering = ['name']
-
-    def __str__(self):
-        return self.name
-
-    def get_absolute_url(self):
-        return reverse('donate',)
-

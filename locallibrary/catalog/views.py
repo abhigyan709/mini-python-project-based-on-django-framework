@@ -1,7 +1,7 @@
 # NOTE: THIS PROJECT FOLLOWS PEP8(Python Enhancement Proposal Guidelines)
 import datetime
 from django.shortcuts import render, get_object_or_404
-from catalog.models import Book, Author, BookInstance, Genre, Language, About, DonateBooks
+from catalog.models import Book, Author, BookInstance, Genre, Language, About
 from django.views import generic
 from django.urls import reverse, reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
@@ -83,12 +83,6 @@ class LoanedBooksByUserListView(LoginRequiredMixin, generic.ListView):          
         return BookInstance.objects.filter(borrower=self.request.user).filter(status__exact='o').order_by('due_back')
 
 
-class DonateBooksByUserListView(LoginRequiredMixin, generic.ListView):
-    model = DonateBooks
-    template_name = 'catalog/donate_form.html'
-    paginate_by = 10
-
-
 class LoanedBooksAllListView(PermissionRequiredMixin, generic.ListView):
     """Generic class-based view listing all books on loan. Only visible to user with can_mark_returned permission."""
     model = BookInstance
@@ -130,11 +124,6 @@ def renew_book_librarian(request, pk):
     }
 
     return render(request, 'catalog/book_renew_librarian.html', context)
-
-
-class DonateCreate(LoginRequiredMixin, CreateView):
-    model = DonateBooks
-    fields = '__all__'
 
 
 class AuthorCreate(PermissionRequiredMixin, CreateView):
