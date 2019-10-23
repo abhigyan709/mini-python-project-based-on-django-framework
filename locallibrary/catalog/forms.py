@@ -2,6 +2,7 @@ import datetime
 from django import forms
 from django.core.exceptions import ValidationError
 from django.utils.translation import ugettext_lazy as _
+from .models import Visitor
 
 
 class RenewBookForm(forms.Form):
@@ -20,3 +21,9 @@ class RenewBookForm(forms.Form):
 
         # Remember to alwayas to return the cleaned data
         return data
+
+
+class VisitorForm(forms.ModelForm):
+    class Meta:
+        model = Visitor
+        fields=["name", "phone_number", "email_id", "message"]

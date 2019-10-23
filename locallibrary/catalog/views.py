@@ -10,6 +10,7 @@ from django.contrib.auth.decorators import permission_required
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from catalog.forms import RenewBookForm
 from django.contrib.auth.forms import UserCreationForm
+from .forms import VisitorForm
 
 
 # views created here, new views have to append like user owned library, donate books, lend own books
@@ -171,3 +172,13 @@ class SignUp(generic.CreateView):
 
     # def get_absolute_url(self):
     # #return reverse('login',)
+
+
+# Visitor form
+def showform(request):
+    form= VisitorForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+    context= {'form': form}
+
+    return render(request, 'catalog/visitor_form.html', context)

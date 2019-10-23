@@ -35,3 +35,6 @@ urlpatterns += [
 urlpatterns += [
     path('signup/', views.SignUp.as_view(), name='signup'),
 ]
+urlpatterns += [
+    path('visitor', views.showform, name='visitor'),
+]

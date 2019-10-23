@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/catalog/migrations/0011_visitor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/visitor_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/static/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -299,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571830486685</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="&quot;Login Page Correctly Added to the Top Bar ✌&quot;">
+      <created>1571865918815</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1571865918815</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -340,6 +354,7 @@
     <MESSAGE value="&quot;New Donation Models Added, templates needs to be resolved&quot;" />
     <MESSAGE value="&quot;Donation models need some Changes and Improvement &amp; Creation&quot;" />
     <MESSAGE value="&quot;User Signup Page Successfully Added. ✌&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;User Signup Page Successfully Added. ✌&quot;" />
+    <MESSAGE value="&quot;Login Page Correctly Added to the Top Bar ✌&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Login Page Correctly Added to the Top Bar ✌&quot;" />
   </component>
 </project>

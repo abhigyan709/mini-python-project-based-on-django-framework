@@ -129,3 +129,8 @@ class Author(models.Model):
         return f'{self.last_name}, {self.first_name}'
 
 
+class Visitor(models.Model):
+    name = models.CharField(max_length=200)
+    phone_number = models.CharField(max_length=13)
+    email_id = models.EmailField()
+    message = models.CharField(max_length=1000)
