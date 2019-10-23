@@ -20,4 +20,3 @@ class RenewBookForm(forms.Form):
 
         # Remember to alwayas to return the cleaned data
         return data
-

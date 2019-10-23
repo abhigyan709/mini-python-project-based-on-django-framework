@@ -9,6 +9,7 @@ from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import permission_required
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from catalog.forms import RenewBookForm
+from django.contrib.auth.forms import UserCreationForm
 
 
 # views created here, new views have to append like user owned library, donate books, lend own books
@@ -162,3 +163,11 @@ class BookDelete(PermissionRequiredMixin, DeleteView):
     fields = '__all__'
     permission_required = 'catalog.can_mark_returned'
 
+
+class SignUp(generic.CreateView):
+    form_class = UserCreationForm
+    success_url = reverse_lazy('login')
+    template_name = 'catalog/signup.html'
+
+    # def get_absolute_url(self):
+    # #return reverse('login',)

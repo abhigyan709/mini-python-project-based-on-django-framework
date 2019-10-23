@@ -10,6 +10,8 @@ urlpatterns = [
     path('about/', views.AboutPageView.as_view(), name = 'about'),
     path('language/', views.LanguageListView.as_view(), name = 'language'),
     path('genre/', views.GenreListView.as_view(), name = 'genre'),
+    path('signup/', views.SignUp.as_view(), name='signup'),
+
 ]
 urlpatterns += [
     path('mybooks/', views.LoanedBooksByUserListView.as_view(), name='my-borrowed'),
@@ -29,4 +31,7 @@ urlpatterns += [
     path('book/create/', views.BookCreate.as_view(), name='book_create'),
     path('book/<int:pk>/update/', views.BookUpdate.as_view(), name='book_update'),
     path('book/<int:pk>/delete/', views.BookDelete.as_view(), name='book_delete'),
+]
+urlpatterns += [
+    path('signup/', views.SignUp.as_view(), name='signup'),
 ]
