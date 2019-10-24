@@ -4,22 +4,17 @@
   <h4><div class="topnav">
   <a class="active" href="{% url 'index' %}">Home</a>
   <a class="active" href="{% url 'about' %}">About</a>
-  <!--<a class="active" href="contact">Contact</a> -->
-  <!--<a class="active" href="{% url 'login' %}">LogIn</a> -->
-  <!-- <a class="active" href="{% url 'logout'%}?next={{request.path}}">Logout</a> -->
   <a class="active" href="{% url 'language' %}">Languages</a>
   <a class="active" href="{% url 'genre' %}">Genres</a>
-  <!-- <a class="active" href="{% url 'signup' %}">Sign Up</a> -->
   <a class="active" href="{% url 'visitor' %}">Contact Us</a>
-  <!-- <a class="active" href="{% url 'donate' %}">Donate Books</a> -->
   {% if user.is_authenticated %}
      User: {{ user.get_username }}
      <a class="active" href="{% url 'donate' %}">Donate Books</a>
+     <a href="{% url 'logout'%}?next={{request.path}}">Logout</a>
    {% else %}
      <a class="active" href="{% url 'login'%}?next={{request.path}}">Login</a>
      <a class="active" href="{% url 'signup' %}">Sign Up</a>
    {% endif %}
-  <!--<input type="text" placeholder="Search.."> -->
     </div></h4>
   <h2>Welcome to LocalLibrary, a website developed by <em>abhigyan709</em>!</h2>
 
