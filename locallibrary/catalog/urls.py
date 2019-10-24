@@ -1,6 +1,5 @@
 from django.urls import path
 from . import views
-from . admin import admin
 
 urlpatterns = [
     path('', views.index, name = 'index'),
@@ -17,8 +16,6 @@ urlpatterns = [
 urlpatterns += [
     path('mybooks/', views.LoanedBooksByUserListView.as_view(), name='my-borrowed'),
     path('borrowed/', views.LoanedBooksAllListView.as_view(), name='all-borrowed'),
-    # path('donate/', views.DonateBooksByUserListView.as_view(), name='donate'),
-    # path('donate/create/', views.DonateCreate.as_view(), name='donate_create'),
 ]
 urlpatterns += [
     path('book/<uuid:pk>/renew/', views.renew_book_librarian, name='renew-book-librarian'),
@@ -38,4 +35,7 @@ urlpatterns += [
 ]
 urlpatterns += [
     path('visitor', views.VisitorClass.as_view(), name='visitor'),
+]
+urlpatterns += [
+    path('donate', views.DonateClass.as_view(), name='donate'),
 ]

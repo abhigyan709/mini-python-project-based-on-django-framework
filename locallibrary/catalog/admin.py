@@ -1,14 +1,9 @@
 from django.contrib import admin
-from catalog.models import Author, Genre, Book, BookInstance, Language, About, Visitor
+from catalog.models import Author, Genre, Book, BookInstance, Language, About, Visitor, Donate
 
-# Register your models here.
-# admin.site.register(Book)
-# admin.site.register(Author)
 admin.site.register(Genre)
-# admin.site.register(BookInstance)
 admin.site.register(Language)
 admin.site.register(About)
-# admin.site.register(Visitor)
 
 
 class VisitorInline(admin.TabularInline):
@@ -59,3 +54,15 @@ class BookInstanceAdmin(admin.ModelAdmin):
             'fields': ('status', 'due_back', 'borrower')
         }),
     )
+
+
+class DonateInline(admin.TabularInline):
+    model = Donate
+
+
+class DonateAdmin(admin.ModelAdmin):
+    list_display = ('book', 'author', 'copies', 'edition', 'price', 'email', 'phone', 'donator_name')
+    fields = ['book', 'author', 'copies', 'edition', 'price', 'email', 'phone', 'donator_name']
+
+
+admin.site.register(Donate, DonateAdmin)

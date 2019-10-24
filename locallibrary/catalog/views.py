@@ -10,7 +10,7 @@ from django.contrib.auth.decorators import permission_required
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from catalog.forms import RenewBookForm
 from django.contrib.auth.forms import UserCreationForm
-from .forms import VisitorForm
+from .forms import VisitorForm, DonateForm
 
 
 # views created here, new views have to append like user owned library, donate books, lend own books
@@ -189,3 +189,7 @@ class VisitorClass(generic.CreateView):
     template_name = 'catalog/visitor_form.html'
 
 
+class DonateClass(generic.CreateView):
+    form_class = DonateForm
+    success_url = reverse_lazy('index')
+    template_name = 'catalog/donate_form.html'

@@ -134,3 +134,14 @@ class Visitor(models.Model):
     phone_number = models.CharField(max_length=13)
     email_id = models.EmailField()
     message = models.CharField(max_length=1000)
+
+
+class Donate(models.Model):
+    book = models.CharField(max_length = 100)
+    author = models.CharField(max_length = 100)
+    copies = models.IntegerField(max_length=10, default=1)
+    edition = models.CharField(max_length=100)
+    price = models.DecimalField(max_digits= 7, decimal_places=2)
+    email = models.EmailField()
+    phone = models.CharField(max_length=100)
+    donator_name = models.CharField(max_length=100, default="Your Name")
