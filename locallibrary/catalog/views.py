@@ -175,10 +175,17 @@ class SignUp(generic.CreateView):
 
 
 # Visitor form
-def showform(request):
+""" def showform(request):
     form= VisitorForm(request.POST or None)
     if form.is_valid():
         form.save()
     context= {'form': form}
+    return render(request, 'catalog/visitor_form.html', context) """
 
-    return render(request, 'catalog/visitor_form.html', context)
+
+class VisitorClass(generic.CreateView):
+    form_class = VisitorForm
+    success_url = reverse_lazy('index')
+    template_name = 'catalog/visitor_form.html'
+
+
