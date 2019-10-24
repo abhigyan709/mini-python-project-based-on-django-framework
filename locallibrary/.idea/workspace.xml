@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0012_donate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/donate_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/migrations/0014_donate_language.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -335,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571885357168</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="&quot;Donate Models Successfully Added, need some basic moification ✌&quot;">
+      <created>1571900985794</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1571900985795</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -354,7 +356,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;Third Commit&quot;" />
     <MESSAGE value="&quot;Fourth Commit&quot;" />
     <MESSAGE value="&quot;Fifth Commit&quot;" />
     <MESSAGE value="&quot;Sixth Commit&quot;" />
@@ -379,6 +380,7 @@
     <MESSAGE value="&quot;Visitors form successfully created, needs some modification is database ✌&quot;" />
     <MESSAGE value="&quot;Visitors Form Succesfully Working  ✌&quot;" />
     <MESSAGE value="&quot;Visitors Form function changed to class Succesfully Working  ✌&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Visitors Form function changed to class Succesfully Working  ✌&quot;" />
+    <MESSAGE value="&quot;Donate Models Successfully Added, need some basic moification ✌&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Donate Models Successfully Added, need some basic moification ✌&quot;" />
   </component>
 </project>

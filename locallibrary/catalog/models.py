@@ -139,6 +139,7 @@ class Visitor(models.Model):
 class Donate(models.Model):
     book = models.CharField(max_length = 100)
     author = models.CharField(max_length = 100)
+    language = models.CharField(max_length=100, default="English")
     copies = models.IntegerField(max_length=10, default=1)
     edition = models.CharField(max_length=100)
     price = models.DecimalField(max_digits= 7, decimal_places=2)

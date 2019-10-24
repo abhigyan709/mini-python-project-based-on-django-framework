@@ -61,8 +61,8 @@ class DonateInline(admin.TabularInline):
 
 
 class DonateAdmin(admin.ModelAdmin):
-    list_display = ('book', 'author', 'copies', 'edition', 'price', 'email', 'phone', 'donator_name')
-    fields = ['book', 'author', 'copies', 'edition', 'price', 'email', 'phone', 'donator_name']
+    list_display = ('book', 'author', "language", 'copies', 'edition', 'price', 'email', 'phone', 'donator_name')
+    fields = ['book', 'author', 'language', 'copies', 'edition', 'price', 'email', 'phone', 'donator_name']
 
 
 admin.site.register(Donate, DonateAdmin)
