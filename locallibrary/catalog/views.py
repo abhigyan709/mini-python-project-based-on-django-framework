@@ -170,18 +170,6 @@ class SignUp(generic.CreateView):
     success_url = reverse_lazy('login')
     template_name = 'catalog/signup.html'
 
-    # def get_absolute_url(self):
-    # #return reverse('login',)
-
-
-# Visitor form
-""" def showform(request):
-    form= VisitorForm(request.POST or None)
-    if form.is_valid():
-        form.save()
-    context= {'form': form}
-    return render(request, 'catalog/visitor_form.html', context) """
-
 
 class VisitorClass(generic.CreateView):
     form_class = VisitorForm
@@ -189,7 +177,7 @@ class VisitorClass(generic.CreateView):
     template_name = 'catalog/visitor_form.html'
 
 
-class DonateClass(generic.CreateView):
+class DonateClass(LoginRequiredMixin, generic.CreateView):
     form_class = DonateForm
     success_url = reverse_lazy('index')
     template_name = 'catalog/donate_form.html'

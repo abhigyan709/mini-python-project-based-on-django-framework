@@ -33,4 +33,4 @@ class VisitorForm(forms.ModelForm):
 class DonateForm(forms.ModelForm):
     class Meta:
         model = Donate
-        fields = ["book", "author", "language", "copies", "edition", "price", "email", "phone", "donator_name"]
+        fields = ["book", "author", "language", "copies", "edition", "price", "email", "phone", "donator_name", "donate_for_free"]
