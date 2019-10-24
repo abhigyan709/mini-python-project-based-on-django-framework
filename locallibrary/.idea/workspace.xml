@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0011_visitor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/visitor_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -313,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571865918815</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="&quot;Visitors form successfully created, needs some modification is database ✌&quot;">
+      <created>1571870658572</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1571870658572</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -355,6 +355,7 @@
     <MESSAGE value="&quot;Donation models need some Changes and Improvement &amp; Creation&quot;" />
     <MESSAGE value="&quot;User Signup Page Successfully Added. ✌&quot;" />
     <MESSAGE value="&quot;Login Page Correctly Added to the Top Bar ✌&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Login Page Correctly Added to the Top Bar ✌&quot;" />
+    <MESSAGE value="&quot;Visitors form successfully created, needs some modification is database ✌&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Visitors form successfully created, needs some modification is database ✌&quot;" />
   </component>
 </project>
