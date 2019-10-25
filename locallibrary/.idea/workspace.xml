@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,7 +44,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/catalog/templates/catalog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../creditapp" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="Push.Settings">
@@ -377,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571971883706</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="&quot;Added Emojis&quot;">
+      <created>1571985762705</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1571985762705</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -396,7 +401,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;New Commit&quot;" />
     <MESSAGE value="&quot;Need Some Changes in Languages List&quot;" />
     <MESSAGE value="&quot;Need Some changes at About page&quot;" />
     <MESSAGE value="&quot;Need Some changes at About page&quot;&#10;&quot;New commit after rename of the project&quot;" />
@@ -421,6 +425,7 @@
     <MESSAGE value="&quot;Visitors name changed to Contact Us &amp; Donate to Donate Us&quot;" />
     <MESSAGE value="&quot;Log Out Button Added to Top navigation bar&quot;" />
     <MESSAGE value="&quot;Login Button/Link Permanently removed from Side Bar&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Login Button/Link Permanently removed from Side Bar&quot;" />
+    <MESSAGE value="&quot;Added Emojis&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Added Emojis&quot;" />
   </component>
 </project>
