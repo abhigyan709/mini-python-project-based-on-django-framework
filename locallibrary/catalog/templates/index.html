@@ -1,7 +1,7 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
-  <h4><div class="topnav">
+  <h3><div class="topnav">
   <a class="active" href="{% url 'index' %}">Home</a>
   <a class="active" href="{% url 'about' %}">About</a>
   <a class="active" href="{% url 'language' %}">Languages</a>
@@ -15,7 +15,7 @@
      <a class="active" href="{% url 'login'%}?next={{request.path}}">Login</a>
      <a class="active" href="{% url 'signup' %}">Sign Up</a>
    {% endif %}
-    </div></h4>
+    </div></h3>
   <h2>Welcome to LocalLibrary, a website developed by <em>abhigyan709</em>!</h2>
 
   <h3>The library has the following record counts:</h3>
