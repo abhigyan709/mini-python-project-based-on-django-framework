@@ -181,3 +181,5 @@ class DonateClass(LoginRequiredMixin, generic.CreateView):
     form_class = DonateForm
     success_url = reverse_lazy('index')
     template_name = 'catalog/donate_form.html'
+
+

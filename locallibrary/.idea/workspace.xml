@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -370,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571961319603</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="&quot;Login Button/Link Permanently removed from Side Bar&quot;">
+      <created>1571971883706</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1571971883706</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -389,7 +396,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;Tenth Commit&quot;" />
     <MESSAGE value="&quot;New Commit&quot;" />
     <MESSAGE value="&quot;Need Some Changes in Languages List&quot;" />
     <MESSAGE value="&quot;Need Some changes at About page&quot;" />
@@ -414,6 +420,7 @@
     <MESSAGE value="&quot;Now only registered user can donate books, Sign Up page is not being showed to Logged In user.&quot;" />
     <MESSAGE value="&quot;Visitors name changed to Contact Us &amp; Donate to Donate Us&quot;" />
     <MESSAGE value="&quot;Log Out Button Added to Top navigation bar&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Log Out Button Added to Top navigation bar&quot;" />
+    <MESSAGE value="&quot;Login Button/Link Permanently removed from Side Bar&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Login Button/Link Permanently removed from Side Bar&quot;" />
   </component>
 </project>
