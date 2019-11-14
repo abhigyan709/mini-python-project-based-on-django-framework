@@ -2,13 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../creditapp/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../creditapp/.idea/creditapp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../creditapp/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../creditapp/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../creditapp/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../creditapp/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../creditapp/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../creditapp/.idea/creditapp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../creditapp/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../creditapp/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../creditapp/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../creditapp/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../creditapp/credit/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../creditapp/credit/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../creditapp/credit/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../creditapp/credit/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../creditapp/credit/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../creditapp/credit/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../creditapp/credit/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../creditapp/credit/views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +59,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/adarsh_project/creditapp" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="Push.Settings">

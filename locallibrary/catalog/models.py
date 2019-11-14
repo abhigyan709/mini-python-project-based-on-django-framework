@@ -147,3 +147,4 @@ class Donate(models.Model):
     phone = models.CharField(max_length=100)
     donator_name = models.CharField(max_length=100, default="Your Name")
     donate_for_free = models.CharField(max_length=5, default="Yes")
+    
