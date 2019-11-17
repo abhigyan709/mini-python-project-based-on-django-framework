@@ -39,7 +39,3 @@ urlpatterns += [
 urlpatterns += [
     path('donate', views.DonateClass.as_view(), name='donate'),
 ]
-urlpatterns += [
-    path('blog/', views.PostListView.as_view(), name='blog'),
-    # path('<slug:slug>/', views.PostDetail.as_view(), name='blog_view')
-]

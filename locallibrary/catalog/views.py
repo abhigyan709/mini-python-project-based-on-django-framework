@@ -11,7 +11,6 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from catalog.forms import RenewBookForm
 from django.contrib.auth.forms import UserCreationForm
 from .forms import VisitorForm, DonateForm
-from .models import Post
 
 
 # views created here, new views have to append like user owned library, donate books, lend own books
@@ -182,16 +181,5 @@ class DonateClass(LoginRequiredMixin, generic.CreateView):
     form_class = DonateForm
     success_url = reverse_lazy('index')
     template_name = 'catalog/donate_form.html'
-
-
-class PostListView(generic.ListView):
-    model = Post
-    # queryset = Post.objects.filter(status=1).order_by('-created_on')
-    # template_name = 'catalog/post_list.html'
-
-
-class PostDetail(generic.DetailView):
-    model = Post
-    template_name = 'blog_view.html'
 
 
