@@ -161,6 +161,7 @@ class Blog(models.Model):
     author = models.ForeignKey(User, on_delete= models.CASCADE)
     updated_on = models.DateTimeField(auto_now= True)
     content = models.TextField()
+    image = models.ImageField(default="yes")
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
 
