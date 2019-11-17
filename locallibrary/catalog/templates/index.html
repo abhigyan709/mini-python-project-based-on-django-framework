@@ -3,12 +3,12 @@
 {% block content %}
   <h3><div class="topnav">
   <a class="active" href="{% url 'index' %}">Home</a>
+  <a class="active" href="{% url 'about' %}">About</a>
   <a class="active" href="{% url 'language' %}">Languages</a>
   <a class="active" href="{% url 'genre' %}">Genres</a>
   <a class="active" href="{% url 'visitor' %}">Contact Us</a>
+  <a class="active" href="http://localhost:8000/admin" target="_blank">Admin Site</a>
   <a class="active" href="https://www.goapti.in/" target="_blank">GoApti.In</a>
-  <a class="active" href="http://localhost:8000/admin/login/?next=/admin/" target="_blank">Admin Site</a>
-
   {% if user.is_authenticated %}
      User: {{ user.get_username }}
      <a class="active" href="{% url 'donate' %}">Donate Books </a>

@@ -1,7 +1,7 @@
 # NOTE: THIS PROJECT FOLLOWS PEP8(Python Enhancement Proposal Guidelines)
 import datetime
 from django.shortcuts import render, get_object_or_404
-from catalog.models import Book, Author, BookInstance, Genre, Language
+from catalog.models import Book, Author, BookInstance, Genre, Language, About
 from django.views import generic
 from django.urls import reverse, reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
@@ -47,6 +47,11 @@ class BookListView(generic.ListView):                                           
 
 class LanguageListView(generic.ListView):                                                           # Language List View
     model = Language
+    paginate_by = 10
+
+
+class AboutPageView(generic.ListView):                                                                 # About Page View
+    model = About
     paginate_by = 10
 
 

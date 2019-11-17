@@ -2,16 +2,68 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0018_auto_20191117_1903.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0019_auto_20191117_1906.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/locallibrary.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/locallibrary.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0002_language.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0002_language.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0003_auto_20191017_0117.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0003_auto_20191017_0117.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0004_book_language.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0004_book_language.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0005_bookinstance_borrower.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0005_bookinstance_borrower.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0006_auto_20191018_1049.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0006_auto_20191018_1049.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0007_about.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0007_about.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0008_auto_20191022_1100.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0008_auto_20191022_1100.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0009_auto_20191022_1158.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0009_auto_20191022_1158.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0010_delete_donatebooks.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0010_delete_donatebooks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0011_visitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0011_visitor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0012_donate.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0012_donate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0013_auto_20191024_1237.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0013_auto_20191024_1237.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0014_donate_language.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0014_donate_language.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0015_donate_donate_for_free.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0015_donate_donate_for_free.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0016_post.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0017_delete_post.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0018_auto_20191117_1903.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0019_auto_20191117_1906.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0020_delete_about.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/about_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/author_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/author_confirm_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/author_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/author_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/author_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/author_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/author_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/author_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/book_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/book_confirm_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/book_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/book_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/book_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/book_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/book_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/book_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/book_renew_librarian.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/book_renew_librarian.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/bookinstance_list_borrowed_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/bookinstance_list_borrowed_all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/bookinstance_list_borrowed_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/bookinstance_list_borrowed_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/donate_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/donate_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/genre_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/genre_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/language_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/language_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/visitor_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/visitor_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/logged_out.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/logged_out.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/password_reset_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_reset_confirm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/password_reset_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_reset_done.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/password_reset_email.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_reset_email.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/password_reset_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_reset_form.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,6 +140,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571202466731</updated>
+    </task>
+    <task id="LOCAL-00001" summary="&quot;Second Commit&quot;">
+      <created>1571372039050</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571372039050</updated>
+    </task>
+    <task id="LOCAL-00002" summary="&quot;Third Commit&quot;">
+      <created>1571376928273</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1571376928273</updated>
+    </task>
+    <task id="LOCAL-00003" summary="&quot;Fourth Commit&quot;">
+      <created>1571380955752</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1571380955752</updated>
+    </task>
+    <task id="LOCAL-00004" summary="&quot;Fourth Commit&quot;">
+      <created>1571381067352</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1571381067352</updated>
     </task>
     <task id="LOCAL-00005" summary="&quot;Fourth Commit&quot;">
       <created>1571381078200</created>
@@ -376,63 +456,7 @@
       <option name="project" value="LOCAL" />
       <updated>1573851992643</updated>
     </task>
-    <task id="LOCAL-00046" summary="&quot;New Features Added, Colors &amp; Button Added to home page&quot;">
-      <created>1573854754398</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1573854754399</updated>
-    </task>
-    <task id="LOCAL-00047" summary="&quot;Admin Site Link Added to the Index Page&quot;">
-      <created>1573932792557</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1573932792557</updated>
-    </task>
-    <task id="LOCAL-00048" summary="&quot;Blog Model Created&quot;">
-      <created>1573955584986</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1573955584986</updated>
-    </task>
-    <task id="LOCAL-00049" summary="&quot;Blog Model Registered to admin.py file&quot;">
-      <created>1573955771426</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1573955771426</updated>
-    </task>
-    <task id="LOCAL-00050" summary="&quot;Views &amp; Urls file updated&quot;">
-      <created>1573957787857</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1573957787858</updated>
-    </task>
-    <task id="LOCAL-00051" summary="&quot;Blog Model Requires Some More Work&quot;">
-      <created>1573995277082</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1573995277083</updated>
-    </task>
-    <task id="LOCAL-00052" summary="&quot;Blog Model Deleted sue to some Error&quot;">
-      <created>1573995737979</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1573995737979</updated>
-    </task>
-    <task id="LOCAL-00053" summary="&quot;Started changes to blog model&quot;">
-      <created>1573996359459</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1573996359459</updated>
-    </task>
-    <option name="localTasksCounter" value="54" />
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -451,6 +475,14 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="&quot;Need Some changes at About page&quot;" />
+    <MESSAGE value="&quot;Need Some changes at About page&quot;&#10;&quot;New commit after rename of the project&quot;" />
+    <MESSAGE value="&quot;About page successfully running&quot;" />
+    <MESSAGE value="&quot;Added login button to the Top BAR&quot;" />
+    <MESSAGE value="&quot;Avalible languages page added&quot;" />
+    <MESSAGE value="&quot;Genres List Added to the Project&quot;" />
+    <MESSAGE value="&quot;PEP8 Guidelines Used&quot;" />
+    <MESSAGE value="&quot;PEP Updated Final&quot;" />
     <MESSAGE value="&quot;New Donation Models Added, template needs to be updated&quot;" />
     <MESSAGE value="&quot;New Donation Models Added, templates needs to be resolved&quot;" />
     <MESSAGE value="&quot;Donation models need some Changes and Improvement &amp; Creation&quot;" />
@@ -468,14 +500,6 @@
     <MESSAGE value="&quot;Login Button/Link Permanently removed from Side Bar&quot;" />
     <MESSAGE value="&quot;Added Emojis&quot;" />
     <MESSAGE value="&quot;New Features Added&quot;" />
-    <MESSAGE value="&quot;New Features Added, Colors &amp; Button Added to home page&quot;" />
-    <MESSAGE value="&quot;Admin Site Link Added to the Index Page&quot;" />
-    <MESSAGE value="&quot;Blog Model Created&quot;" />
-    <MESSAGE value="&quot;Blog Model Registered to admin.py file&quot;" />
-    <MESSAGE value="&quot;Views &amp; Urls file updated&quot;" />
-    <MESSAGE value="&quot;Blog Model Requires Some More Work&quot;" />
-    <MESSAGE value="&quot;Blog Model Deleted sue to some Error&quot;" />
-    <MESSAGE value="&quot;Started changes to blog model&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Started changes to blog model&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;New Features Added&quot;" />
   </component>
 </project>
