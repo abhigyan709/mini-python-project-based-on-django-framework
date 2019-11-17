@@ -184,9 +184,10 @@ class DonateClass(LoginRequiredMixin, generic.CreateView):
     template_name = 'catalog/donate_form.html'
 
 
-class PostList(generic.ListView):
-    queryset = Post.objects.filter(status=1).order_by('-created_on')
-    template_name = 'catalog/blog.html'
+class PostListView(generic.ListView):
+    model = Post
+    # queryset = Post.objects.filter(status=1).order_by('-created_on')
+    # template_name = 'catalog/post_list.html'
 
 
 class PostDetail(generic.DetailView):
