@@ -5,16 +5,6 @@ from django.contrib.auth.models import User
 from datetime import date
 
 
-class About(models.Model):
-    about = models.TextField(max_length=3500, help_text='About the Website & Project')
-
-    def __str__(self):
-        return self.about
-
-    def get_absolute_url(self):
-        return reverse('about',)
-
-
 class Genre(models.Model):
 
     """Model Representing a Book Genre"""
