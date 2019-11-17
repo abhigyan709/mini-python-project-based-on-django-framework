@@ -1,5 +1,5 @@
 from django.contrib import admin
-from catalog.models import Author, Genre, Book, BookInstance, Language, About, Visitor, Donate
+from catalog.models import Author, Genre, Book, BookInstance, Language, About, Visitor, Donate, Blog
 
 
 class VisitorInline(admin.TabularInline):
@@ -62,3 +62,17 @@ admin.site.register(Visitor, VisitorAdmin)
 admin.site.register(Genre)
 admin.site.register(Language)
 admin.site.register(About)
+
+
+class BlogInline(admin.TabularInline):
+    model = Blog
+
+
+class BlogAdmin(admin.ModelAdmin):
+    list_display = ('title', 'slug', 'status', 'created_on')
+    list_filter = ("status",)
+    search_fields = ['title', 'content']
+    prepopulated_fields = {'slug': ('title',)}
+
+
+admin.site.register(Blog, BlogAdmin)
