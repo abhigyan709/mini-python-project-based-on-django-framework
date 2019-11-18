@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0017_blog_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/blog_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -412,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574002799590</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="&quot;Image Section added to Blog Folder&quot;">
+      <created>1574010232232</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1574010232232</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -431,7 +441,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;About page successfully running&quot;" />
     <MESSAGE value="&quot;Added login button to the Top BAR&quot;" />
     <MESSAGE value="&quot;Avalible languages page added&quot;" />
     <MESSAGE value="&quot;Genres List Added to the Project&quot;" />
@@ -456,6 +465,7 @@
     <MESSAGE value="&quot;New Features Added&quot;" />
     <MESSAGE value="&quot;Returned to previous restore point&quot;" />
     <MESSAGE value="&quot;Blog Model created &amp; Registered to admin site Successfully&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Blog Model created &amp; Registered to admin site Successfully&quot;" />
+    <MESSAGE value="&quot;Image Section added to Blog Folder&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Image Section added to Blog Folder&quot;" />
   </component>
 </project>

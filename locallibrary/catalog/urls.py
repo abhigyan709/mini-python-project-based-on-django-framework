@@ -9,6 +9,7 @@ urlpatterns = [
     path('author/<int:pk>', views.AuthorDetailView.as_view(), name='author-detail'),
     path('about/', views.AboutPageView.as_view(), name = 'about'),
     path('language/', views.LanguageListView.as_view(), name = 'language'),
+    path('blog/', views.BlogListView.as_view(), name = 'blog'),
     path('genre/', views.GenreListView.as_view(), name = 'genre'),
     path('signup/', views.SignUp.as_view(), name='signup'),
 
