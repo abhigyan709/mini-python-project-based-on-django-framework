@@ -63,7 +63,7 @@ class BlogDetailView(generic.DetailView):
 
     def blog_detail_view(request):
         blog = get_object_or_404(Blog)
-        return render(request, 'catalog/blog/blog_detail.html', context={'blog' : blog})
+        return render(request, 'catalog/blog/blog_detail.html', context={'blog': blog})
 
 
 class BlogCreate(PermissionRequiredMixin, CreateView):
