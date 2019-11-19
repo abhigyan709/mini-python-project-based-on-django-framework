@@ -9,7 +9,6 @@ urlpatterns = [
     path('author/<int:pk>', views.AuthorDetailView.as_view(), name='author-detail'),
     path('about/', views.AboutPageView.as_view(), name = 'about'),
     path('language/', views.LanguageListView.as_view(), name = 'language'),
-    path('blog/', views.BlogListView.as_view(), name = 'blog'),
     path('genre/', views.GenreListView.as_view(), name = 'genre'),
     path('signup/', views.SignUp.as_view(), name='signup'),
 
@@ -39,4 +38,11 @@ urlpatterns += [
 ]
 urlpatterns += [
     path('donate', views.DonateClass.as_view(), name='donate'),
+]
+urlpatterns += [
+    path('blog/', views.BlogListView.as_view(), name='blog'),
+    path('blog_detail/', views.BlogDetailView.as_view(), name='blog_detail'),
+]
+urlpatterns += [
+    path('blog/create', views.BlogCreate.as_view(), name='blog_create'),
 ]
