@@ -7,9 +7,9 @@
   <a class="active" href="{% url 'language' %}">Languages</a>
   <a class="active" href="{% url 'genre' %}">Genres</a>
   <a class="active" href="{% url 'visitor' %}">Contact Us</a>
-  <a class="active" href="{% url 'blog' %}">Blogs</a>
-  <a class="active" href="http://localhost:8000/admin" target="_blank">Admin Site</a>
+  <a class="active" href="{% url 'blog' %}"> Blogs</a>
   <a class="active" href="https://www.goapti.in/" target="_blank">GoApti.In</a>
+  <a class="active" href="http://localhost:8000/admin/login/?next=/admin/" target="_blank">Admin Site</a>
   {% if user.is_authenticated %}
      User: {{ user.get_username }}
      <a class="active" href="{% url 'donate' %}">Donate Books </a>
@@ -30,7 +30,7 @@
     <li><Strong>Languages:</Strong> {{ num_languages }}</li>
     <li><strong>Genres:</strong> {{ num_genres }}</li>
   </ol>
-   <p>This project is running live on <a href="http://abhigyan709.pythonanywhere.com/catalog/">Python Anywhere</a> </p>
+
   <h6><font color="tomato">This website is Sponsored by <a href="https://www.goapti.in/" target="_blank">GoApti.In</a> India's Number. 1 Aptitude & Education Training Website</h6>
   <h5><font color="blue">More updates on the Website are Coming Soon, Stay Tuned. Thankyou For Visiting this Project.</h5>
   <h4><font color="black">You have visited this page {{ num_visits }}{% if num_visits == 1 %} time{% else %} times{% endif %}.</h4>

@@ -22,10 +22,6 @@
             <!-- <a class="active" href="{% url 'logout'%}?next={{request.path}}">Logout</a> -->
             <!-- <li><a class="active" href="{% url 'language' %}">Languages</a></li> -->
             <!-- <li><a class="active" href="{% url 'login' %}">LogIn</a></li> -->
-            {% if user.is_authenticated %}
-            <li> User: {{ user.get_username }}</li>
-            <li><a href="{% url 'blog_create' %}">Post New Blog</a></li>
-            {% endif %}
           <!--{% if user.is_authenticated %}
             <li>User: {{ user.get_username }}</li>
                <li><a href="{% url 'my-borrowed' %}">My Borrowed</a></li>
@@ -42,7 +38,7 @@
    <li><a href="{% url 'all-borrowed' %}">All borrowed</a></li>
    <li><a href="{% url 'author_create' %}">Create New Author</a></li>
    <li><a href="{% url 'book_create' %}">Add New Book</a></li>
-   <li><a href="{% url 'blog_create' %}">Post New Blog</a></li>
+   <li><a href="{% url 'blog_create' %}">Add New Blog</a></li>
 
    {% endif %}
    </ul>

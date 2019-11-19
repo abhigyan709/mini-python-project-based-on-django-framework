@@ -4,6 +4,7 @@ from django.core.exceptions import ValidationError
 from django.utils.translation import ugettext_lazy as _
 from .models import Visitor
 from .models import Donate
+from .models import Blog
 
 
 class RenewBookForm(forms.Form):
@@ -34,3 +35,9 @@ class DonateForm(forms.ModelForm):
     class Meta:
         model = Donate
         fields = ["book", "author", "language", "copies", "edition", "price", "email", "phone", "donator_name", "donate_for_free"]
+
+
+class BlogForm(forms.ModelForm):
+    class Meta:
+        model = Blog
+        fields = ["title", "slug", "author", "content", "status"]

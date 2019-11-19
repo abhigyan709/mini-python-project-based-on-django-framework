@@ -10,7 +10,7 @@ from django.contrib.auth.decorators import permission_required
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from catalog.forms import RenewBookForm
 from django.contrib.auth.forms import UserCreationForm
-from .forms import VisitorForm, DonateForm
+from .forms import VisitorForm, DonateForm, BlogForm
 
 
 # views created here, new views have to append like user owned library, donate books, lend own books
@@ -48,28 +48,6 @@ class BookListView(generic.ListView):                                           
 class LanguageListView(generic.ListView):                                                           # Language List View
     model = Language
     paginate_by = 10
-    template_name = 'language_list.html'
-
-
-class BlogListView(generic.ListView):
-    model = Blog
-    paginate_by = 10
-    template_name = 'blog_list.html'
-
-
-class BlogDetailView(generic.DetailView):
-    model = Blog
-    # template_name = 'blog_detail.html'
-
-    def blog_detail_view(request):
-        blog = get_object_or_404(Blog)
-        return render(request, 'catalog/blog/blog_detail.html', context={'blog': blog})
-
-
-class BlogCreate(PermissionRequiredMixin, CreateView):
-    model = Blog
-    fields = '__all__'
-    permission_required = 'catalog.can_mark_returned'
 
 
 class AboutPageView(generic.ListView):                                                                 # About Page View
@@ -203,5 +181,29 @@ class DonateClass(LoginRequiredMixin, generic.CreateView):
     form_class = DonateForm
     success_url = reverse_lazy('index')
     template_name = 'catalog/donate_form.html'
+
+
+class BlogCreateClass(PermissionRequiredMixin, generic.CreateView):
+    model = Blog
+    form_class = BlogForm
+    # success_url = reverse('blog_list')
+    template_name = 'catalog/blog_form.html'
+    permission_required = 'catalog.can_mark_returned'
+
+
+class BlogListView(generic.ListView):
+    model = Blog
+    queryset = Blog.objects.filter(status=1).order_by('-created_on')
+    template_name = 'blog_list.html'
+
+
+class BlogDetailView(generic.DetailView):
+    model = Blog
+    # template_name = 'post_detail.html'
+
+    def blog_detail_view(request):
+        blog = get_object_or_404(Blog)
+        return render(request, 'catalog/blog/blog_detail.html', context={'blog': blog})
+
 
 

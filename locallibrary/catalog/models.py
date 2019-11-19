@@ -140,7 +140,7 @@ class Donate(models.Model):
     book = models.CharField(max_length = 100)
     author = models.CharField(max_length = 100)
     language = models.CharField(max_length=100, default="English")
-    copies = models.IntegerField(default=1)
+    copies = models.IntegerField(max_length=10, default=1)
     edition = models.CharField(max_length=100)
     price = models.DecimalField(max_digits= 7, decimal_places=2)
     email = models.EmailField()
@@ -153,13 +153,13 @@ STATUS = (
     (0, "Draft"),
     (1, "Publish")
 )
-
+    
 
 class Blog(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey(User, on_delete= models.CASCADE)
-    updated_on = models.DateTimeField(auto_now= True)
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
     image = models.ImageField(default="yes")
     created_on = models.DateTimeField(auto_now_add=True)
@@ -172,4 +172,4 @@ class Blog(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse('blog',)
+        return reverse('blog', )
