@@ -59,7 +59,11 @@ class BlogListView(generic.ListView):
 
 class BlogDetailView(generic.DetailView):
     model = Blog
-    template_name = 'blog_detail.html'
+    # template_name = 'blog_detail.html'
+
+    def blog_detail_view(request):
+        blog = get_object_or_404(Blog)
+        return render(request, 'catalog/blog/blog_detail.html', context={'blog' : blog})
 
 
 class BlogCreate(PermissionRequiredMixin, CreateView):
