@@ -1,5 +1,5 @@
 from django.contrib import admin
-from catalog.models import Author, Genre, Book, BookInstance, Language, About, Visitor, Donate, Blog
+from catalog.models import Author, Genre, Book, BookInstance, Language, Visitor, Donate, Blog
 
 
 class VisitorInline(admin.TabularInline):
@@ -61,7 +61,6 @@ admin.site.register(Author, AuthorAdmin)
 admin.site.register(Visitor, VisitorAdmin)
 admin.site.register(Genre)
 admin.site.register(Language)
-admin.site.register(About)
 
 
 class BlogInline(admin.TabularInline):
