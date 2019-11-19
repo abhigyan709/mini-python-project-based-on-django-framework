@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/blog_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,13 +80,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571202466731</updated>
-    </task>
-    <task id="LOCAL-00001" summary="&quot;Second Commit&quot;">
-      <created>1571372039050</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1571372039050</updated>
     </task>
     <task id="LOCAL-00002" summary="&quot;Third Commit&quot;">
       <created>1571376928273</created>
@@ -425,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574063892576</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="&quot;Blog Model Template Code Implemented&quot;">
+      <created>1574126041495</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1574126041495</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -444,7 +443,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;Avalible languages page added&quot;" />
     <MESSAGE value="&quot;Genres List Added to the Project&quot;" />
     <MESSAGE value="&quot;PEP8 Guidelines Used&quot;" />
     <MESSAGE value="&quot;PEP Updated Final&quot;" />
@@ -469,6 +467,7 @@
     <MESSAGE value="&quot;Blog Model created &amp; Registered to admin site Successfully&quot;" />
     <MESSAGE value="&quot;Image Section added to Blog Folder&quot;" />
     <MESSAGE value="&quot;Blog Post added to main site&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Blog Post added to main site&quot;" />
+    <MESSAGE value="&quot;Blog Model Template Code Implemented&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Blog Model Template Code Implemented&quot;" />
   </component>
 </project>

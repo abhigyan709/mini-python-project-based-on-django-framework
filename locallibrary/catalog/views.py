@@ -57,6 +57,11 @@ class BlogListView(generic.ListView):
     template_name = 'blog_list.html'
 
 
+class BlogDetailView(generic.DetailView):
+    model = Blog
+    template_name = 'blog_detail.html'
+
+
 class AboutPageView(generic.ListView):                                                                 # About Page View
     model = About
     paginate_by = 10
