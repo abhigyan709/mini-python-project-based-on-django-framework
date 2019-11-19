@@ -57,6 +57,17 @@ class BlogListView(generic.ListView):
     template_name = 'blog_list.html'
 
 
+class BlogDetailView(generic.DetailView):
+    model = Blog
+    template_name = 'blog_detail.html'
+
+
+class BlogCreate(PermissionRequiredMixin, CreateView):
+    model = Blog
+    fields = '__all__'
+    permission_required = 'catalog.can_mark_returned'
+
+
 class AboutPageView(generic.ListView):                                                                 # About Page View
     model = About
     paginate_by = 10
@@ -68,14 +79,6 @@ class BookDetailView(generic.DetailView):                                       
     def book_detail_view(request, primary_key):
         book = get_object_or_404(Book, pk=primary_key)
         return render(request, 'catalog/book_detail.html', context={'book': book})
-
-
-class BlogDetailView(generic.DetailView):
-    model = Blog
-
-    def blog_detail_view(request):
-        blog = get_object_or_404(Blog)
-        return render(request, 'catalog/blog_list/blog_detail.html', context={'blog' : blog})
 
 
 class AuthorListView(generic.ListView):                           # Generic class-based list view for a list of authors.
@@ -141,12 +144,6 @@ def renew_book_librarian(request, pk):
     }
 
     return render(request, 'catalog/book_renew_librarian.html', context)
-
-
-class BlogCreate(PermissionRequiredMixin, CreateView):
-    model = Blog
-    fields = '__all__'
-    permission_required = 'catalog.can_mark_returned'
 
 
 class AuthorCreate(PermissionRequiredMixin, CreateView):
