@@ -48,10 +48,13 @@ class BookListView(generic.ListView):                                           
 class LanguageListView(generic.ListView):                                                           # Language List View
     model = Language
     paginate_by = 10
+    template_name = 'language_list.html'
+
 
 class BlogListView(generic.ListView):
     model = Blog
     paginate_by = 10
+    template_name = 'blog_list.html'
 
 
 class AboutPageView(generic.ListView):                                                                 # About Page View
