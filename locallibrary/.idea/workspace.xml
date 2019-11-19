@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
+    <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="&quot;Now every thing is running fine&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0016_blog.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0016_blog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0017_blog_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0018_auto_20191119_0816.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/blog_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/blog_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/blog_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/blog_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
@@ -415,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573854754399</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="&quot;Now every thing is running fine&quot;">
+      <created>1574189250687</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1574189250687</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,7 +431,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;Need Some changes at About page&quot;&#10;&quot;New commit after rename of the project&quot;" />
     <MESSAGE value="&quot;About page successfully running&quot;" />
     <MESSAGE value="&quot;Added login button to the Top BAR&quot;" />
     <MESSAGE value="&quot;Avalible languages page added&quot;" />
@@ -459,6 +455,7 @@
     <MESSAGE value="&quot;Added Emojis&quot;" />
     <MESSAGE value="&quot;New Features Added&quot;" />
     <MESSAGE value="&quot;New Features Added, Colors &amp; Button Added to home page&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;New Features Added, Colors &amp; Button Added to home page&quot;" />
+    <MESSAGE value="&quot;Now every thing is running fine&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Now every thing is running fine&quot;" />
   </component>
 </project>

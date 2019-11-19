@@ -21,6 +21,7 @@ def index(request):                                             # Generate Count
     num_authors = Author.objects.count()                                            # The 'all()' is implied by default.
     num_languages = Language.objects.count()
     num_genres = Genre.objects.count()
+    num_blogs = Blog.objects.count()
     num_visits = request.session.get('num_visits', 0)                                   # Number of visits to this view,
     request.session['num_visits'] = num_visits+1                                    # as counted in the session variable
     context = {
@@ -30,7 +31,8 @@ def index(request):                                             # Generate Count
         'num_authors': num_authors,
         'num_visits': num_visits,
         'num_languages': num_languages,
-        'num_genres': num_genres
+        'num_genres': num_genres,
+        'num_blogs': num_blogs,
     }
     return render(request, 'index.html', context=context)                # Rendering the HTML Request Page To index.html
 
