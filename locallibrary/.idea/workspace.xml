@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/catalog/migrations/0019_comment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/comment_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,13 +86,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571202466731</updated>
-    </task>
-    <task id="LOCAL-00005" summary="&quot;Fourth Commit&quot;">
-      <created>1571381078200</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1571381078200</updated>
     </task>
     <task id="LOCAL-00006" summary="&quot;Fourth Commit&quot;">
       <created>1571393004403</created>
@@ -427,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574266194784</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="&quot;Sidebar removed for staffs&quot;">
+      <created>1574273785251</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1574273785251</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -446,7 +449,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;New Donation Models Added, template needs to be updated&quot;" />
     <MESSAGE value="&quot;New Donation Models Added, templates needs to be resolved&quot;" />
     <MESSAGE value="&quot;Donation models need some Changes and Improvement &amp; Creation&quot;" />
     <MESSAGE value="&quot;User Signup Page Successfully Added. ✌&quot;" />
@@ -471,6 +473,7 @@
     <MESSAGE value="&quot;Development and Upgrades Continues: 2&quot;" />
     <MESSAGE value="&quot;Development and Upgrades Continues: Reduntant Codes Removed&quot;" />
     <MESSAGE value="&quot;Development and Upgrades Continues: Reduntant Codes Removed:2&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Development and Upgrades Continues: Reduntant Codes Removed:2&quot;" />
+    <MESSAGE value="&quot;Sidebar removed for staffs&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Sidebar removed for staffs&quot;" />
   </component>
 </project>

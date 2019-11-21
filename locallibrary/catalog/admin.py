@@ -1,5 +1,5 @@
 from django.contrib import admin
-from catalog.models import Author, Genre, Book, BookInstance, Language, Visitor, Donate, Blog
+from catalog.models import Author, Genre, Book, BookInstance, Language, Visitor, Donate, Blog, Comment
 
 
 class VisitorInline(admin.TabularInline):
@@ -75,3 +75,19 @@ class BlogAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Blog, BlogAdmin)
+
+
+class CommentInline(admin.TabularInline):
+    model = Comment
+
+
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ('name', 'body', 'blog', 'created_on', 'active')
+    list_filter = ('active', 'created_on')
+    search_fields = ('name', 'email', 'body')
+    actions = ['approve_comments']
+
+    def approve_comments(self, request, queryset):
+        queryset.update(active=True)
+
+admin.site.register(Comment, CommentAdmin)
