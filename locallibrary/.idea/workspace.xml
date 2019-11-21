@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/blog_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/blog_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/comment_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
@@ -81,13 +84,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571202466731</updated>
-    </task>
-    <task id="LOCAL-00007" summary="&quot;Fifth Commit&quot;">
-      <created>1571393140254</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1571393140254</updated>
     </task>
     <task id="LOCAL-00008" summary="&quot;Fifth Commit&quot;">
       <created>1571395587999</created>
@@ -425,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574312806934</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="&quot;Every thing running fine&quot;">
+      <created>1574315648295</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1574315648295</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -444,7 +447,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;Donation models need some Changes and Improvement &amp; Creation&quot;" />
     <MESSAGE value="&quot;User Signup Page Successfully Added. ✌&quot;" />
     <MESSAGE value="&quot;Login Page Correctly Added to the Top Bar ✌&quot;" />
     <MESSAGE value="&quot;Visitors form successfully created, needs some modification is database ✌&quot;" />
@@ -469,6 +471,7 @@
     <MESSAGE value="&quot;Development and Upgrades Continues: Reduntant Codes Removed:2&quot;" />
     <MESSAGE value="&quot;Sidebar removed for staffs&quot;" />
     <MESSAGE value="&quot;Comment Models, Form &amp; html created&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Comment Models, Form &amp; html created&quot;" />
+    <MESSAGE value="&quot;Every thing running fine&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Every thing running fine&quot;" />
   </component>
 </project>
