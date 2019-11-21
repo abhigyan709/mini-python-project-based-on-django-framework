@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
+    <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="&quot;Interview Question Models Added&quot;">
+      <change afterPath="$PROJECT_DIR$/catalog/migrations/0020_interview.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/blog_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/blog_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/comment_form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,13 +83,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571202466731</updated>
-    </task>
-    <task id="LOCAL-00008" summary="&quot;Fifth Commit&quot;">
-      <created>1571395587999</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1571395587999</updated>
     </task>
     <task id="LOCAL-00009" summary="&quot;Sixth Commit&quot;">
       <created>1571429336540</created>
@@ -428,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574315648295</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="&quot;Comment Section needs more work&quot;">
+      <created>1574322760848</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1574322760848</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -447,8 +446,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;User Signup Page Successfully Added. ✌&quot;" />
-    <MESSAGE value="&quot;Login Page Correctly Added to the Top Bar ✌&quot;" />
     <MESSAGE value="&quot;Visitors form successfully created, needs some modification is database ✌&quot;" />
     <MESSAGE value="&quot;Visitors Form Succesfully Working  ✌&quot;" />
     <MESSAGE value="&quot;Visitors Form function changed to class Succesfully Working  ✌&quot;" />
@@ -472,6 +469,8 @@
     <MESSAGE value="&quot;Sidebar removed for staffs&quot;" />
     <MESSAGE value="&quot;Comment Models, Form &amp; html created&quot;" />
     <MESSAGE value="&quot;Every thing running fine&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Every thing running fine&quot;" />
+    <MESSAGE value="&quot;Comment Section needs more work&quot;" />
+    <MESSAGE value="&quot;Interview Question Models Added&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Interview Question Models Added&quot;" />
   </component>
 </project>

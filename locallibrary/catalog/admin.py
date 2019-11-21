@@ -1,5 +1,10 @@
 from django.contrib import admin
-from catalog.models import Author, Genre, Book, BookInstance, Language, Visitor, Donate, Blog, Comment
+from catalog.models import Author, Book
+from catalog.models import Genre, Language
+from catalog.models import BookInstance
+from catalog.models import Visitor, Donate
+from catalog.models import Blog, Comment
+from catalog.models import Interview
 
 
 class VisitorInline(admin.TabularInline):
@@ -10,7 +15,6 @@ class BooksInline(admin.TabularInline):
     model = Book
 
 
-# Define the admin class
 class AuthorAdmin(admin.ModelAdmin):
     list_display = ('last_name', 'first_name', 'date_of_birth', 'date_of_death')
     fields = ['first_name', 'last_name', ('date_of_birth', 'date_of_death')]
@@ -90,4 +94,19 @@ class CommentAdmin(admin.ModelAdmin):
     def approve_comments(self, request, queryset):
         queryset.update(active=True)
 
+
 admin.site.register(Comment, CommentAdmin)
+
+
+class InterviewInline(admin.TabularInline):
+    model = Interview
+
+
+class InterviewAdmin(admin.ModelAdmin):
+    list_display = ('title', 'slug', 'status', 'created_on')
+    list_filter = ("status",)
+    search_fields = ['title', 'content']
+    prepopulated_fields = {'slug': ('title',)}
+
+
+admin.site.register(Interview, InterviewAdmin)
