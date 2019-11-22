@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/catalog/static/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/static/js/script2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,13 +82,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571202466731</updated>
-    </task>
-    <task id="LOCAL-00010" summary="&quot;Seventh Commit&quot;">
-      <created>1571429726690</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1571429726690</updated>
     </task>
     <task id="LOCAL-00011" summary="&quot;Eighth Commit&quot;">
       <created>1571431008868</created>
@@ -427,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574333141658</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="&quot;JavaScript is Running Correctly&quot;">
+      <created>1574391169095</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1574391169097</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -446,7 +445,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;Visitors form successfully created, needs some modification is database ✌&quot;" />
     <MESSAGE value="&quot;Visitors Form Succesfully Working  ✌&quot;" />
     <MESSAGE value="&quot;Visitors Form function changed to class Succesfully Working  ✌&quot;" />
     <MESSAGE value="&quot;Donate Models Successfully Added, need some basic moification ✌&quot;" />
@@ -471,6 +469,7 @@
     <MESSAGE value="&quot;Every thing running fine&quot;" />
     <MESSAGE value="&quot;Comment Section needs more work&quot;" />
     <MESSAGE value="&quot;Interview Question Models Added&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Interview Question Models Added&quot;" />
+    <MESSAGE value="&quot;JavaScript is Running Correctly&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;JavaScript is Running Correctly&quot;" />
   </component>
 </project>
