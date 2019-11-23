@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,13 +83,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571202466731</updated>
-    </task>
-    <task id="LOCAL-00020" summary="&quot;Need Some changes at About page&quot;&#10;&quot;New commit after rename of the project&quot;">
-      <created>1571632615397</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1571632615398</updated>
     </task>
     <task id="LOCAL-00021" summary="&quot;Need Some changes at About page&quot;&#10;&quot;New commit after rename of the project&quot;">
       <created>1571636208997</created>
@@ -427,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574508421412</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="&quot;User Details Improved&quot;">
+      <created>1574508767306</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1574508767306</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -446,7 +446,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;Added Emojis&quot;" />
     <MESSAGE value="&quot;New Features Added&quot;" />
     <MESSAGE value="&quot;New Features Added, Colors &amp; Button Added to home page&quot;" />
     <MESSAGE value="&quot;Now every thing is running fine&quot;" />
@@ -471,6 +470,7 @@
     <MESSAGE value="&quot;Interview Model Form Created&quot;" />
     <MESSAGE value="&quot;Interview Create Front End Created.&quot;" />
     <MESSAGE value="&quot;User Detail is Showing on DropDown&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;User Detail is Showing on DropDown&quot;" />
+    <MESSAGE value="&quot;User Details Improved&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;User Details Improved&quot;" />
   </component>
 </project>
