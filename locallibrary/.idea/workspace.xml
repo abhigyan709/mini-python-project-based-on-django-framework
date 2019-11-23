@@ -3,8 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/author_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/author_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/blog_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/blog_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/book_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/book_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/genre_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/genre_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/interview_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/interview_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/language_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/language_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/visitor_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/visitor_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,13 +91,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571202466731</updated>
-    </task>
-    <task id="LOCAL-00024" summary="&quot;Avalible languages page added&quot;">
-      <created>1571650811079</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1571650811079</updated>
     </task>
     <task id="LOCAL-00025" summary="&quot;Genres List Added to the Project&quot;">
       <created>1571661656643</created>
@@ -427,7 +428,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574515152346</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="&quot;Enhancements to blog page: 2&quot;">
+      <created>1574515484502</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1574515484502</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -446,7 +454,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;Blog Counter Addes to Index Page&quot;" />
     <MESSAGE value="&quot;Useless About Model Removed&quot;" />
     <MESSAGE value="&quot;Development and Upgrades Continues&quot;" />
     <MESSAGE value="&quot;Development and Upgrades Continues: 2&quot;" />
@@ -471,6 +478,7 @@
     <MESSAGE value="&quot;Now main page is looking Fine&quot;" />
     <MESSAGE value="&quot;Buttons Attribute Changed&quot;" />
     <MESSAGE value="&quot;Enhancements to blog page&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Enhancements to blog page&quot;" />
+    <MESSAGE value="&quot;Enhancements to blog page: 2&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Enhancements to blog page: 2&quot;" />
   </component>
 </project>

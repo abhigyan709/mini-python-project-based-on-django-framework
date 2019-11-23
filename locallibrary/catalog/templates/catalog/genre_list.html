@@ -5,7 +5,7 @@
   {% if genre_list %}
   <ul>
     {% for genre in genre_list %}
-      <li>
+      <li style="color: green; font-family: courier; font-size: 150%;">
         <a href="{{ genre.get_absolute_url }}">{{ genre }}</a>
       </li>
     {% endfor %}
