@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,13 +84,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571202466731</updated>
-    </task>
-    <task id="LOCAL-00026" summary="&quot;PEP8 Guidelines Used&quot;">
-      <created>1571663201405</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1571663201405</updated>
     </task>
     <task id="LOCAL-00027" summary="&quot;PEP Updated Final&quot;">
       <created>1571663521322</created>
@@ -426,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574527217899</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="&quot;Enhancement Continues...&quot;">
+      <created>1574527352532</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1574527352532</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -445,7 +447,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;Development and Upgrades Continues&quot;" />
     <MESSAGE value="&quot;Development and Upgrades Continues: 2&quot;" />
     <MESSAGE value="&quot;Development and Upgrades Continues: Reduntant Codes Removed&quot;" />
     <MESSAGE value="&quot;Development and Upgrades Continues: Reduntant Codes Removed:2&quot;" />
@@ -470,6 +471,7 @@
     <MESSAGE value="&quot;Enhancements to blog page&quot;" />
     <MESSAGE value="&quot;Enhancements to blog page: 2&quot;" />
     <MESSAGE value="&quot;Enhancement Continues&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Enhancement Continues&quot;" />
+    <MESSAGE value="&quot;Enhancement Continues...&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Enhancement Continues...&quot;" />
   </component>
 </project>
