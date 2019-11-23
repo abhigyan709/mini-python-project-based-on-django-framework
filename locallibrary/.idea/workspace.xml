@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/catalog/static/css/styles2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/static/js/script4.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/static/css/styles2.css" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/static/css/styles2.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/blog_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/blog_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/book_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/book_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/donate_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/donate_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/visitor_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/visitor_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/locallibrary/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +53,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="C:/adarsh_project/creditapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/catalog/static/js" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="Push.Settings">
@@ -60,6 +63,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\django_projects\locallibrary\catalog\static\js" />
+      <recent name="C:\django_projects\locallibrary\catalog\static\css" />
       <recent name="C:\django_projects\locallibrary\catalog\templates\catalog" />
       <recent name="C:\django_projects\locallibrary\templates\registration" />
     </key>
@@ -86,13 +91,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571202466731</updated>
-    </task>
-    <task id="LOCAL-00013" summary="&quot;Tenth Commit&quot;">
-      <created>1571442311245</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1571442311245</updated>
     </task>
     <task id="LOCAL-00014" summary="&quot;Tenth Commit&quot;">
       <created>1571442705937</created>
@@ -430,7 +428,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574482679180</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="&quot;Layout Changed &amp; Bootstrap Removed&quot;">
+      <created>1574500366789</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1574500366789</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -449,7 +454,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;Donate Models Successfully Added, need some basic moification ✌&quot;" />
     <MESSAGE value="&quot;Donate Model Modification Level 1&quot;" />
     <MESSAGE value="&quot;Donate Model Modification Level 2&quot;" />
     <MESSAGE value="&quot;Now only registered user can donate books, Sign Up page is not being showed to Logged In user.&quot;" />
@@ -474,6 +478,7 @@
     <MESSAGE value="&quot;JavaScript is Running Correctly&quot;" />
     <MESSAGE value="&quot;JavaScript Login error Warning added to Login Page&quot;" />
     <MESSAGE value="&quot;Index page title changed&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Index page title changed&quot;" />
+    <MESSAGE value="&quot;Layout Changed &amp; Bootstrap Removed&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Layout Changed &amp; Bootstrap Removed&quot;" />
   </component>
 </project>
