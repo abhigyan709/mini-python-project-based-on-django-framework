@@ -1,7 +1,7 @@
 # NOTE: THIS PROJECT FOLLOWS PEP8(Python Enhancement Proposal Guidelines)
 import datetime
 from django.shortcuts import render, get_object_or_404
-from catalog.models import Book, Author, BookInstance, Genre, Language, Blog, Comment
+from catalog.models import Book, Author, BookInstance, Genre, Language, Blog, Comment, Interview
 from django.views import generic
 from django.urls import reverse, reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
@@ -201,6 +201,10 @@ class BlogDetailView(generic.DetailView):
     def blog_detail_view(request):
         blog = get_object_or_404(Blog)
         return render(request, 'catalog/blog/blog_detail.html', context={'blog': blog})
+
+class InterviewListView(generic.ListView):
+    model = Interview
+    template_name = 'interview_list.html'
 
 
 

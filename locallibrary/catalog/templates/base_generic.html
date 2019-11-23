@@ -4,13 +4,10 @@
   {% block title %}<title>Local Library</title>{% endblock %}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    -->
     {% load static %}
   <link rel="stylesheet" href="{% static 'css/styles2.css' %}">
 </head>
 <body>
-
 <div class="navbar">
   <a class="active" href="{% url 'index' %}">Home</a>
   <a class="active" href="{% url 'books' %}">Books</a>
@@ -19,6 +16,7 @@
   <a class="active" href="{% url 'genre' %}">Genres</a>
   <a class="active" href="{% url 'visitor' %}">Contact Us</a>
   <a class="active" href="{% url 'blog' %}"> Blogs</a>
+  <a class="active" href="{% url 'interview' %}">Interview Questions</a>
   <a class="active" href="https://www.goapti.in/" target="_blank">GoApti.In</a>
   <a class="active" href="http://localhost:8000/admin/login/?next=/admin/" target="_blank">Admin Site</a>
   <div class="dropdown">

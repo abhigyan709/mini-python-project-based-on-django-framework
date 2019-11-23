@@ -10,6 +10,7 @@ urlpatterns = [
     path('language/', views.LanguageListView.as_view(), name = 'language'),
     path('genre/', views.GenreListView.as_view(), name = 'genre'),
     path('signup/', views.SignUp.as_view(), name='signup'),
+    path('interview/', views.InterviewListView.as_view(), name='interview'),
 
 ]
 urlpatterns += [

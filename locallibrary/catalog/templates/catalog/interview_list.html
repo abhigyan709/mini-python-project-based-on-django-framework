@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Interview Questions</h1>
+  {% if interview_list %}
+  <ul>
+    {% for interview in interview_list %}
+      <li>
+        <a href="{{ interview.get_absolute_url }}">{{ interview }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>There is nothing in the library.</p>
+  {% endif %}
+{% endblock %}
