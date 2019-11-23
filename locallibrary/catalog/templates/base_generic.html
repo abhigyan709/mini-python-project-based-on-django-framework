@@ -25,6 +25,7 @@
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-content" id="myDropdown">
+     {{ user.get_username }}
       {% if user.is_staff %}
    {% if perms.catalog.can_mark_returned %}
    <a class="active" href="{% url 'all-borrowed' %}">Borrowers</a>
