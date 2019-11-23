@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/interview_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,13 +87,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571202466731</updated>
-    </task>
-    <task id="LOCAL-00017" summary="&quot;New Commit&quot;">
-      <created>1571446064427</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1571446064427</updated>
     </task>
     <task id="LOCAL-00018" summary="&quot;Need Some Changes in Languages List&quot;">
       <created>1571558523602</created>
@@ -425,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574507146611</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="&quot;Interview Model Form Created&quot;">
+      <created>1574507409587</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1574507409587</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -444,7 +450,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;Visitors name changed to Contact Us &amp; Donate to Donate Us&quot;" />
     <MESSAGE value="&quot;Log Out Button Added to Top navigation bar&quot;" />
     <MESSAGE value="&quot;Login Button/Link Permanently removed from Side Bar&quot;" />
     <MESSAGE value="&quot;Added Emojis&quot;" />
@@ -469,6 +474,7 @@
     <MESSAGE value="&quot;Bootstraping is Not Working For DropDown&quot;" />
     <MESSAGE value="&quot;stylesheet css file 1 removed&quot;" />
     <MESSAGE value="&quot;Interview Question Views Added to Index Page&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Interview Question Views Added to Index Page&quot;" />
+    <MESSAGE value="&quot;Interview Model Form Created&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Interview Model Form Created&quot;" />
   </component>
 </project>

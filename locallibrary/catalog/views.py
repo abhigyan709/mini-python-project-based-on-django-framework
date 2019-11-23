@@ -10,7 +10,7 @@ from django.contrib.auth.decorators import permission_required
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from catalog.forms import RenewBookForm
 from django.contrib.auth.forms import UserCreationForm
-from .forms import VisitorForm, DonateForm, BlogForm, CommentForm
+from .forms import VisitorForm, DonateForm, BlogForm, CommentForm, InterviewForm
 
 
 # views created here, new views have to append like user owned library, donate books, lend own books
@@ -205,6 +205,14 @@ class BlogDetailView(generic.DetailView):
 class InterviewListView(generic.ListView):
     model = Interview
     template_name = 'interview_list.html'
+
+
+class InterviewCreateClass(PermissionRequiredMixin, generic.CreateView):
+    model = Interview
+    form_class = InterviewForm
+    # success_url = reverse('blog_list')
+    template_name = 'catalog/interview_form.html'
+    permission_required = 'catalog.can_mark_returned'
 
 
 

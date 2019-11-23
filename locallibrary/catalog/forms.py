@@ -50,7 +50,7 @@ class BlogForm(forms.ModelForm):
 class InterviewForm(forms.ModelForm):
     class Meta:
         model = Interview
-        fields = ["title", "slug", "author", "content", "ststus"]
+        fields = ["title", "slug", "author", "content", "status"]
 
 
 class CommentForm(forms.ModelForm):
