@@ -3,18 +3,31 @@
 {% block content %}
   <h1>Blog List</h1>
   {% if blog_list %}
-  <ul>
     {% for blog in blog_list %}
-      <div class="card mb-4">
-                <div class="card-body">
-                    <h2 class="card-title">{{ blog.title }}</h2>
-                    <p class="card-text text-muted h6">{{ blog.author }} | {{ blog.created_on}} </p>
-                    <p class="card-text">{{blog.content|slice:":200" }}</p>
-                    <a href="{% url 'blog_detail' blog.slug  %}" class="btn btn-primary">Read More &rarr;</a>
-                </div>
-            </div>
+          <ol>
+              <div>
+    <style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+  </div>
+                    <h2>{{ blog.title }}</h2>
+                    <p>{{ blog.author }} | {{ blog.created_on}} </p>
+                    <p>{{blog.content|slice:":200" }}</p>
+                    <a href="{% url 'blog_detail' blog.slug  %}" class="button">Read More &rarr;</a>
+
+          </ol>
     {% endfor %}
-  </ul>
   {% else %}
     <p>There is nothing to show blog in the library.</p>
   {% endif %}
