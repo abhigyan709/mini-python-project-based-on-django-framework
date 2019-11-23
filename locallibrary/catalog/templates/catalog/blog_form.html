@@ -1,13 +1,15 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
-
+{% if form.errors %}
+  {% load static %}
+  <script src="{% static '/js/script3.js' %}" type="text/javascript"></script>
+{% endif %}
 <form action="" method="post">
     {% csrf_token %}
     <table>
     {{ form.as_table }}
     </table>
     <input type="submit" value="Post" />
-
 </form>
 {% endblock %}

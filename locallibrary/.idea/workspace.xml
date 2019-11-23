@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/catalog/static/js/dropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/static/js/script3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0016_blog.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0016_blog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0017_delete_about.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0017_delete_about.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0018_auto_20191120_0111.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0018_auto_20191120_0111.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0019_comment.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0019_comment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0020_interview.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0020_interview.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/static/js/dropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/blog_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/blog_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/blog_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/blog_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/blog_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/blog_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
