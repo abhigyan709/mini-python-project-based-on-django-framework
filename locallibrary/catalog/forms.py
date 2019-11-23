@@ -6,6 +6,7 @@ from .models import Visitor
 from .models import Donate
 from .models import Blog
 from .models import Comment
+from .models import Interview
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Submit
 
@@ -44,6 +45,12 @@ class BlogForm(forms.ModelForm):
     class Meta:
         model = Blog
         fields = ["title", "slug", "author", "content", "status"]
+
+
+class InterviewForm(forms.ModelForm):
+    class Meta:
+        model = Interview
+        fields = ["title", "slug", "author", "content", "ststus"]
 
 
 class CommentForm(forms.ModelForm):
