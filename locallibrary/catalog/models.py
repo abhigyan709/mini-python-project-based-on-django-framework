@@ -1,18 +1,17 @@
-import uuid                      # required for unique book instance
+import uuid
 from django.db import models
-from django.urls import reverse  # used to generate URLs by reversing the URL patterns
+from django.urls import reverse
 from django.contrib.auth.models import User
 from datetime import date
+from django.template.defaultfilters import slugify
+from django.db.models.signals import post_save, pre_save
+from django.dispatch import receiver
 
 
 class Genre(models.Model):
-
-    """Model Representing a Book Genre"""
     name = models.CharField(max_length=200, help_text='Enter a book genre (e.g Science Fiction)')
 
     def __str__(self):
-
-        """String for representing the Model Object."""
         return self.name
 
     def get_absolute_url(self):
@@ -20,12 +19,9 @@ class Genre(models.Model):
 
 
 class Language(models.Model):
-    """Model representing a Language (e.g. English, French, Japanese, etc.)"""
-    name = models.CharField(max_length=200,
-                            help_text="Enter the book's natural language (e.g. English, French, Japanese etc.)")
+    name = models.CharField(max_length=200, help_text="Enter the book's natural language (e.g. English, French, Japanese etc.)")
 
     def __str__(self):
-        """String for representing the Model object (in Admin site etc.)"""
         return self.name
 
     def get_absolute_url(self):
@@ -34,31 +30,19 @@ class Language(models.Model):
 
 class Book(models.Model):
     title = models.CharField(max_length=200)
-
-    # Foreign Key used because book can only have only one author but can have multiple books
-    # Author as a string Rather than object because it hasn't been declared yet in the file
     author = models.ForeignKey('Author', on_delete=models.SET_NULL, null=True)
-
     summary = models.TextField(max_length=1000, help_text='Enter a brief description os the book')
-    isbn = models.CharField('ISBN',
-                            max_length=13,
-                            help_text='13 Character ISBN number. International Standard Book Number.')
-
-    # ManyToManyField used because genre can contain many books. Books can cover many genre.
-    # genre class has already been defined so we can specify the above object
+    isbn = models.CharField('ISBN',max_length=13,help_text='13 Character ISBN number. International Standard Book Number.')
     genre = models.ManyToManyField(Genre, help_text='Select a genre for this Boook')
     language = models.ForeignKey('Language', on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
-        """Str for generating the Model Object."""
         return self.title
 
     def get_absolute_url(self):
-        """Returns the url to access a detail record for this book."""
         return reverse('book-detail', args=[str(self.id)])
 
     def display_genre(self):
-        """Create a string for the Genre. This is required to display genre in Admin."""
         return ', '.join(genre.name for genre in self.genre.all()[:3])
 
     display_genre.short_description = 'Genre'
@@ -101,7 +85,6 @@ class BookInstance(models.Model):
 
 
 class Author(models.Model):
-    """Model representing an author."""
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     date_of_birth = models.DateField(null=True, blank=True)
@@ -111,11 +94,9 @@ class Author(models.Model):
         ordering = ['first_name', 'last_name']
 
     def get_absolute_url(self):
-        """Return the url to access a particular author instance"""
         return reverse('author-detail', args=[str(self.id)])
 
     def __str__(self):
-        """String for representing the model Object."""
         return f'{self.first_name}, {self.last_name}'
 
 
@@ -198,6 +179,77 @@ class Comment(models.Model):
 
     def __str__(self):
         return 'Comment {} by {}'.format(self.body, self.name)
+
+
+class Quiz(models.Model):
+    name = models.CharField(max_length=1000)
+    questions_count = models.IntegerField(default=0)
+    description = models.CharField(max_length=70)
+    created = models.DateTimeField(auto_now_add=True,null=True,blank=True)
+    slug = models.SlugField()
+    roll_out = models.BooleanField(default=False)
+
+    class Meta:
+        ordering = ['created',]
+        verbose_name_plural ="Quizzes"
+
+    def __str__(self):
+        return self.name
+
+
+class Question(models.Model):
+    quiz = models.ForeignKey(Quiz, on_delete=models.CASCADE)
+    label = models.CharField(max_length=1000)
+    order = models.IntegerField(default=0)
+
+    def __str__(self):
+        return self.label
+
+
+class Answer(models.Model):
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    text = models.CharField(max_length=1000)
+    is_correct = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.text
+
+
+class QuizTakers(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    quiz = models.ForeignKey(Quiz, on_delete=models.CASCADE)
+    correct_answers = models.IntegerField(default=0)
+    completed = models.BooleanField(default=False)
+    timestamp = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.user.username
+
+
+class Response(models.Model):
+    quiztaker = models.ForeignKey(QuizTakers, on_delete=models.CASCADE)
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    answer = models.ForeignKey(Answer, on_delete=models.CASCADE, null=True, blank=True)
+
+    def __str__(self):
+        return self.question.label
+
+
+@receiver(post_save, sender=Quiz)
+def set_default_quiz(sender, instance, created,**kwargs):
+    quiz = Quiz.objects.filter(id=instance.id)
+    quiz.update(questions_count=instance.question_set.filter(quiz=instance.pk).count())
+
+
+@receiver(post_save, sender=Question)
+def set_default(sender, instance, created,**kwargs):
+    quiz = Quiz.objects.filter(id=instance.quiz.id)
+    quiz.update(questions_count=instance.quiz.question_set.filter(quiz=instance.quiz.pk).count())
+
+
+@receiver(pre_save, sender=Quiz)
+def slugify_title(sender, instance, *args, **kwargs):
+    instance.slug = slugify(instance.name)
 
 
 

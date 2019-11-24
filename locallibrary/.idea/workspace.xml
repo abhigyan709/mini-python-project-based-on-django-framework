@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0021_auto_20191124_0939.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/author_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/author_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/bookinstance_list_borrowed_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/bookinstance_list_borrowed_all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,13 +82,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571202466731</updated>
-    </task>
-    <task id="LOCAL-00028" summary="&quot;New Donation Models Added, template needs to be updated&quot;">
-      <created>1571726128082</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1571726128082</updated>
     </task>
     <task id="LOCAL-00029" summary="&quot;New Donation Models Added, templates needs to be resolved&quot;">
       <created>1571735821289</created>
@@ -432,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574529145823</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="&quot;Font Changed, for Authors.&quot;">
+      <created>1574570737678</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1574570737678</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -451,7 +445,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;Development and Upgrades Continues: Reduntant Codes Removed&quot;" />
     <MESSAGE value="&quot;Development and Upgrades Continues: Reduntant Codes Removed:2&quot;" />
     <MESSAGE value="&quot;Sidebar removed for staffs&quot;" />
     <MESSAGE value="&quot;Comment Models, Form &amp; html created&quot;" />
@@ -476,6 +469,7 @@
     <MESSAGE value="&quot;Enhancement Continues&quot;" />
     <MESSAGE value="&quot;Enhancement Continues...&quot;" />
     <MESSAGE value="&quot;Enhancement Continues...4&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Enhancement Continues...4&quot;" />
+    <MESSAGE value="&quot;Font Changed, for Authors.&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Font Changed, for Authors.&quot;" />
   </component>
 </project>
