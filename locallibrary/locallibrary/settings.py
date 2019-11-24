@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'jquery',
     'crispy_forms',
     'widget_tweaks',
-    'nested_admin',
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 MIDDLEWARE = [

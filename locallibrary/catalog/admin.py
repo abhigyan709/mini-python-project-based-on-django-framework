@@ -5,7 +5,6 @@ from catalog.models import BookInstance
 from catalog.models import Visitor, Donate
 from catalog.models import Blog, Comment
 from catalog.models import Interview
-from .models import Quiz, Question, Answer, Response, QuizTakers
 
 
 class VisitorInline(admin.TabularInline):
@@ -113,30 +112,3 @@ class InterviewAdmin(admin.ModelAdmin):
 admin.site.register(Interview, InterviewAdmin)
 
 
-class AnswerInline(admin.TabularInline):
-    model = Answer
-    extra = 4
-    max_num = 4
-
-
-class QuestionInline(admin.TabularInline):
-    model = Question
-    inlines = [AnswerInline,]
-    extra = 19
-
-
-class QuizAdmin(admin.ModelAdmin):
-    inlines = [QuestionInline,]
-
-
-class ResponseInline(admin.TabularInline):
-    model = Response
-
-
-class QuizTakersAdmin(admin.ModelAdmin):
-    inlines = [ResponseInline,]
-
-
-admin.site.register(Quiz, QuizAdmin)
-admin.site.register(QuizTakers, QuizTakersAdmin)
-admin.site.register(Response)
