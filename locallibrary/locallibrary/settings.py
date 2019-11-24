@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'jquery',
     'crispy_forms',
     'widget_tweaks',
+    'rest_framework',
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 MIDDLEWARE = [

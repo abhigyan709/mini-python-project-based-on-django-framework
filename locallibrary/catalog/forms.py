@@ -7,8 +7,6 @@ from .models import Donate
 from .models import Blog
 from .models import Comment
 from .models import Interview
-from crispy_forms.helper import FormHelper
-from crispy_forms.layout import Submit
 
 
 class RenewBookForm(forms.Form):
@@ -57,3 +55,4 @@ class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ('name', 'email', 'body')
+

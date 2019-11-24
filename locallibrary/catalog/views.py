@@ -1,11 +1,10 @@
-# NOTE: THIS PROJECT FOLLOWS PEP8(Python Enhancement Proposal Guidelines)
 import datetime
 from django.shortcuts import render, get_object_or_404
 from catalog.models import Book, Author, BookInstance, Genre, Language, Blog, Comment, Interview
 from django.views import generic
 from django.urls import reverse, reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth.decorators import permission_required
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from catalog.forms import RenewBookForm
@@ -13,17 +12,16 @@ from django.contrib.auth.forms import UserCreationForm
 from .forms import VisitorForm, DonateForm, BlogForm, CommentForm, InterviewForm
 
 
-# views created here, new views have to append like user owned library, donate books, lend own books
-def index(request):                                             # Generate Counts For Some Highlight Object to Show Data
-    num_books = Book.objects.all().count()                      # View function for Home Page
+def index(request):
+    num_books = Book.objects.all().count()
     num_instances = BookInstance.objects.all().count()
-    num_instances_available = BookInstance.objects.filter(status__exact='a').count()    # Available books (status = 'a')
-    num_authors = Author.objects.count()                                            # The 'all()' is implied by default.
+    num_instances_available = BookInstance.objects.filter(status__exact='a').count()
+    num_authors = Author.objects.count()
     num_languages = Language.objects.count()
     num_genres = Genre.objects.count()
     num_blogs = Blog.objects.count()
-    num_visits = request.session.get('num_visits', 0)                                   # Number of visits to this view,
-    request.session['num_visits'] = num_visits+1                                    # as counted in the session variable
+    num_visits = request.session.get('num_visits', 0)
+    request.session['num_visits'] = num_visits+1
     context = {
         'num_books': num_books,
         'num_instances': num_instances,
@@ -34,25 +32,25 @@ def index(request):                                             # Generate Count
         'num_genres': num_genres,
         'num_blogs': num_blogs,
     }
-    return render(request, 'index.html', context=context)                # Rendering the HTML Request Page To index.html
+    return render(request, 'index.html', context=context)
 
 
-class GenreListView(generic.ListView):                                                                # Genres List View
+class GenreListView(generic.ListView):
     model = Genre
     paginate_by = 10
 
 
-class BookListView(generic.ListView):                                                                   # Book List View
+class BookListView(generic.ListView):
     model = Book
     paginate_by = 10
 
 
-class LanguageListView(generic.ListView):                                                           # Language List View
+class LanguageListView(generic.ListView):
     model = Language
     paginate_by = 10
 
 
-class BookDetailView(generic.DetailView):                                         # Detailed view of the available books
+class BookDetailView(generic.DetailView):
     model = Book
 
     def book_detail_view(request, primary_key):
@@ -60,12 +58,12 @@ class BookDetailView(generic.DetailView):                                       
         return render(request, 'catalog/book_detail.html', context={'book': book})
 
 
-class AuthorListView(generic.ListView):                           # Generic class-based list view for a list of authors.
+class AuthorListView(generic.ListView):
     model= Author
     paginate_by = 10
 
 
-class AuthorDetailView(generic.DetailView):                             # Generic class-based detail view for an author.
+class AuthorDetailView(generic.DetailView):
     model = Author
 
     def author_detail_view(request, primary_key):
@@ -73,7 +71,7 @@ class AuthorDetailView(generic.DetailView):                             # Generi
         return render(request, 'catalog/author_detail.html', context={'author': author})
 
 
-class LoanedBooksByUserListView(LoginRequiredMixin, generic.ListView):               # list view for Loaned book by user
+class LoanedBooksByUserListView(LoginRequiredMixin, generic.ListView):
     model = BookInstance
     template_name = 'catalog/bookinstance_list_borrowed_user.html'
     paginate_by = 10
@@ -83,7 +81,6 @@ class LoanedBooksByUserListView(LoginRequiredMixin, generic.ListView):          
 
 
 class LoanedBooksAllListView(PermissionRequiredMixin, generic.ListView):
-    """Generic class-based view listing all books on loan. Only visible to user with can_mark_returned permission."""
     model = BookInstance
     permission_required = 'catalog.can_mark_returned'
     template_name = 'catalog/bookinstance_list_borrowed_all.html'
@@ -96,23 +93,13 @@ class LoanedBooksAllListView(PermissionRequiredMixin, generic.ListView):
 @permission_required('catalog.can_mark_returned')
 def renew_book_librarian(request, pk):
     book_instance = get_object_or_404(BookInstance, pk=pk)
-
-    # if this is POST request then process the form data
     if request.method == 'POST':
-
-        # create a form instance and populate it with data from the request (binding):
         form = RenewBookForm(request.POST)
-
-        # Check if the form is valid:
         if form.is_valid():
-            # Process the data in form.cleaned_data as required (here we just write it to the model due_back field)
             book_instance.due_back = form.cleaned_data['renewal_date']
             book_instance.save()
-
-            # redirect to a new URL:
             return HttpResponseRedirect(reverse('all-borrowed') )
 
-    # If this is a GET (or any method) create the default form
     else:
         proposed_renewal_date = datetime.date.today() + datetime.timedelta(weeks=3)
         form = RenewBookForm(initial={'renewal_date': proposed_renewal_date})
@@ -183,7 +170,6 @@ class DonateClass(LoginRequiredMixin, generic.CreateView):
 class BlogCreateClass(PermissionRequiredMixin, generic.CreateView):
     model = Blog
     form_class = BlogForm
-    # success_url = reverse('blog_list')
     template_name = 'catalog/blog_form.html'
     permission_required = 'catalog.can_mark_returned'
 
@@ -196,11 +182,11 @@ class BlogListView(generic.ListView):
 
 class BlogDetailView(generic.DetailView):
     model = Blog
-    # template_name = 'post_detail.html'
 
     def blog_detail_view(request):
         blog = get_object_or_404(Blog)
         return render(request, 'catalog/blog/blog_detail.html', context={'blog': blog})
+
 
 class InterviewListView(generic.ListView):
     model = Interview
@@ -210,9 +196,5 @@ class InterviewListView(generic.ListView):
 class InterviewCreateClass(PermissionRequiredMixin, generic.CreateView):
     model = Interview
     form_class = InterviewForm
-    # success_url = reverse('blog_list')
     template_name = 'catalog/interview_form.html'
     permission_required = 'catalog.can_mark_returned'
-
-
-
