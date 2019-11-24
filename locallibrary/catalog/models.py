@@ -108,7 +108,7 @@ class Author(models.Model):
     date_of_death = models.DateField('Died', null=True, blank=True)
 
     class Meta:
-        ordering = ['last_name', 'first_name']
+        ordering = ['first_name', 'last_name']
 
     def get_absolute_url(self):
         """Return the url to access a particular author instance"""
@@ -116,7 +116,7 @@ class Author(models.Model):
 
     def __str__(self):
         """String for representing the model Object."""
-        return f'{self.last_name}, {self.first_name}'
+        return f'{self.first_name}, {self.last_name}'
 
 
 class Visitor(models.Model):
