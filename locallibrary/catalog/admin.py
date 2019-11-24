@@ -5,6 +5,7 @@ from catalog.models import BookInstance
 from catalog.models import Visitor, Donate
 from catalog.models import Blog, Comment
 from catalog.models import Interview
+from catalog.models import Exam, Question
 
 
 class VisitorInline(admin.TabularInline):
@@ -110,5 +111,8 @@ class InterviewAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Interview, InterviewAdmin)
+
+admin.site.register(Exam)
+admin.site.register(Question)
 
 

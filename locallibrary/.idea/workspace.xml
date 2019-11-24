@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0023_auto_20191124_1234.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/migrations/0024_exam_question.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +47,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/catalog/static/js" />
+    <property name="last_opened_file_path" value="C:/quizwizard-master" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="Push.Settings">
@@ -86,13 +85,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571202466731</updated>
-    </task>
-    <task id="LOCAL-00031" summary="&quot;User Signup Page Successfully Added. 😊✌&quot;">
-      <created>1571830486685</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1571830486685</updated>
     </task>
     <task id="LOCAL-00032" summary="&quot;Login Page Correctly Added to the Top Bar ✌&quot;">
       <created>1571865918815</created>
@@ -430,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574577929352</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="&quot;Quiz Model Deleted Due to some Errors&quot;">
+      <created>1574579572229</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1574579572229</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -449,7 +448,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;Comment Models, Form &amp; html created&quot;" />
     <MESSAGE value="&quot;Every thing running fine&quot;" />
     <MESSAGE value="&quot;Comment Section needs more work&quot;" />
     <MESSAGE value="&quot;Interview Question Models Added&quot;" />
@@ -474,6 +472,7 @@
     <MESSAGE value="&quot;Font Changed, for Authors.&quot;" />
     <MESSAGE value="&quot;Quiz Model Successfully Created&quot;" />
     <MESSAGE value="&quot;Quiz Model Successfully Registered to Admin Site&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Quiz Model Successfully Registered to Admin Site&quot;" />
+    <MESSAGE value="&quot;Quiz Model Deleted Due to some Errors&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Quiz Model Deleted Due to some Errors&quot;" />
   </component>
 </project>

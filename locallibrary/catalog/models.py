@@ -4,7 +4,10 @@ from django.urls import reverse
 from django.contrib.auth.models import User
 from datetime import date
 
-
+STATUS = (
+    (0, "Draft"),
+    (1, "Publish")
+)
 class Genre(models.Model):
     name = models.CharField(max_length=200, help_text='Enter a book genre (e.g Science Fiction)')
 
@@ -117,12 +120,6 @@ class Donate(models.Model):
     donate_for_free = models.CharField(max_length=5, default="Yes")
 
 
-STATUS = (
-    (0, "Draft"),
-    (1, "Publish")
-)
-    
-
 class Blog(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
@@ -177,3 +174,23 @@ class Comment(models.Model):
     def __str__(self):
         return 'Comment {} by {}'.format(self.body, self.name)
 
+
+class Exam(models.Model):
+    name = models.CharField(max_length=100,default="")
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
+
+
+class Question(models.Model):
+    question = models.TextField(max_length=200,default="")
+    option1 = models.CharField(max_length=50,default="")
+    option2 = models.CharField(max_length=50, default="")
+    option3 = models.CharField(max_length=50, default="")
+    option4 = models.CharField(max_length=50, default="")
+    answer = models.CharField(max_length=50, default="")
+    exam = models.ForeignKey(Exam, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.question
