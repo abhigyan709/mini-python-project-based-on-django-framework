@@ -173,3 +173,15 @@ class Comment(models.Model):
 
     def __str__(self):
         return 'Comment {} by {}'.format(self.body, self.name)
+
+
+class Quiz(models.Model):
+    question = models.CharField(max_length=1000)
+    option1 = models.CharField(max_length=500)
+    option2 = models.CharField(max_length=500)
+    option3 = models.CharField(max_length=500)
+    option4 = models.CharField(max_length=500)
+    answer = models.CharField(max_length=500)
+
+class Topic(models.Model):
+    topic = models.ForeignKey(Quiz, on_delete=models.CASCADE)

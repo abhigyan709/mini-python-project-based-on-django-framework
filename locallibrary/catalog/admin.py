@@ -5,6 +5,7 @@ from catalog.models import BookInstance
 from catalog.models import Visitor, Donate
 from catalog.models import Blog, Comment
 from catalog.models import Interview
+from catalog.models import Quiz
 
 
 class VisitorInline(admin.TabularInline):
@@ -111,6 +112,17 @@ class InterviewAdmin(admin.ModelAdmin):
 
 admin.site.register(Interview, InterviewAdmin)
 
+
+class QuizInline(admin.TabularInline):
+    model = Quiz
+
+
+class QuizAdmin(admin.ModelAdmin):
+    list_display = ('question', 'option1', 'option2', 'option3', 'option4', 'answer')
+    fields = ['question', 'option1', 'option2', 'option3', 'option4', 'answer']
+
+
+admin.site.register(Quiz, QuizAdmin)
 
 
 
