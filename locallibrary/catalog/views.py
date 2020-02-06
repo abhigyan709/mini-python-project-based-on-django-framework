@@ -1,15 +1,15 @@
 import datetime
 from django.shortcuts import render, get_object_or_404
-from catalog.models import Book, Author, BookInstance, Genre, Language, Blog, Comment, Interview
+from . models import Book, Author, BookInstance, Genre, Language, Blog, Comment, Interview
 from django.views import generic
 from django.urls import reverse, reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth.decorators import permission_required
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
-from catalog.forms import RenewBookForm
+from . forms import RenewBookForm
 from django.contrib.auth.forms import UserCreationForm
-from .forms import VisitorForm, DonateForm, BlogForm, CommentForm, InterviewForm
+from . forms import VisitorForm, DonateForm, BlogForm, CommentForm, InterviewForm, PredictorForm
 
 
 def index(request):
@@ -165,6 +165,11 @@ class DonateClass(LoginRequiredMixin, generic.CreateView):
     form_class = DonateForm
     success_url = reverse_lazy('index')
     template_name = 'catalog/donate_form.html'
+
+class PredictorClass(LoginRequiredMixin, generic.CreateView):
+    form_class = PredictorForm
+    success_url = reverse_lazy('index')
+    template_name = 'catalog/predictor.html'
 
 
 class BlogCreateClass(PermissionRequiredMixin, generic.CreateView):

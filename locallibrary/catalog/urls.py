@@ -38,6 +38,9 @@ urlpatterns += [
     path('visitor', views.VisitorClass.as_view(), name='visitor'),
 ]
 urlpatterns += [
+    path('predictor', views.PredictorClass.as_view(), name='predictor'),
+]
+urlpatterns += [
     path('donate', views.DonateClass.as_view(), name='donate'),
 ]
 
