@@ -1,6 +1,6 @@
 import datetime
 from django.shortcuts import render, get_object_or_404
-from . models import Book, Author, BookInstance, Genre, Language, Blog, Comment, Interview
+from . models import Book, Author, BookInstance, Genre, Language
 from django.views import generic
 from django.urls import reverse, reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
@@ -9,7 +9,7 @@ from django.contrib.auth.decorators import permission_required
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from . forms import RenewBookForm
 from django.contrib.auth.forms import UserCreationForm
-from . forms import VisitorForm, DonateForm, BlogForm, CommentForm, InterviewForm, PredictorForm
+from . forms import VisitorForm, PredictorForm
 
 
 def index(request):
@@ -19,7 +19,6 @@ def index(request):
     num_authors = Author.objects.count()
     num_languages = Language.objects.count()
     num_genres = Genre.objects.count()
-    num_blogs = Blog.objects.count()
     num_visits = request.session.get('num_visits', 0)
     request.session['num_visits'] = num_visits+1
     context = {
@@ -30,7 +29,6 @@ def index(request):
         'num_visits': num_visits,
         'num_languages': num_languages,
         'num_genres': num_genres,
-        'num_blogs': num_blogs,
     }
     return render(request, 'index.html', context=context)
 
@@ -161,45 +159,10 @@ class VisitorClass(generic.CreateView):
     template_name = 'catalog/visitor_form.html'
 
 
-class DonateClass(LoginRequiredMixin, generic.CreateView):
-    form_class = DonateForm
-    success_url = reverse_lazy('index')
-    template_name = 'catalog/donate_form.html'
-
 class PredictorClass(LoginRequiredMixin, generic.CreateView):
     form_class = PredictorForm
     success_url = reverse_lazy('index')
     template_name = 'catalog/predictor.html'
 
 
-class BlogCreateClass(PermissionRequiredMixin, generic.CreateView):
-    model = Blog
-    form_class = BlogForm
-    template_name = 'catalog/blog_form.html'
-    permission_required = 'catalog.can_mark_returned'
 
-
-class BlogListView(generic.ListView):
-    model = Blog
-    queryset = Blog.objects.filter(status=1).order_by('-created_on')
-    template_name = 'blog_list.html'
-
-
-class BlogDetailView(generic.DetailView):
-    model = Blog
-
-    def blog_detail_view(request):
-        blog = get_object_or_404(Blog)
-        return render(request, 'catalog/blog/blog_detail.html', context={'blog': blog})
-
-
-class InterviewListView(generic.ListView):
-    model = Interview
-    template_name = 'interview_list.html'
-
-
-class InterviewCreateClass(PermissionRequiredMixin, generic.CreateView):
-    model = Interview
-    form_class = InterviewForm
-    template_name = 'catalog/interview_form.html'
-    permission_required = 'catalog.can_mark_returned'

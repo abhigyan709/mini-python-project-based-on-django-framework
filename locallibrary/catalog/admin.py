@@ -2,9 +2,8 @@ from django.contrib import admin
 from .models import Author, Book
 from .models import Genre, Language
 from .models import BookInstance
-from .models import Visitor, Donate
-from .models import Blog, Comment
-from .models import Interview, Predictor
+from .models import Visitor
+from .models import Predictor
 
 
 class VisitorInline(admin.TabularInline):
@@ -50,32 +49,10 @@ class BookInstanceAdmin(admin.ModelAdmin):
         }),
     )
 
-
-class DonateInline(admin.TabularInline):
-    model = Donate
-
-
-class DonateAdmin(admin.ModelAdmin):
-    list_display = ('book', 'author', "language", 'copies', 'edition', 'price', 'email', 'phone', 'donator_name', 'donate_for_free')
-    fields = ['book', 'author', 'language', 'copies', 'edition', 'price', 'email', 'phone', 'donator_name', 'donate_for_free']
-
-
-admin.site.register(Donate, DonateAdmin)
 admin.site.register(Author, AuthorAdmin)
 admin.site.register(Visitor, VisitorAdmin)
 admin.site.register(Genre)
 admin.site.register(Language)
-
-
-class BlogInline(admin.TabularInline):
-    model = Blog
-
-
-class BlogAdmin(admin.ModelAdmin):
-    list_display = ('title', 'slug', 'status', 'created_on')
-    list_filter = ("status",)
-    search_fields = ['title', 'content']
-    prepopulated_fields = {'slug': ('title',)}
 
 
 class PredictorInline(admin.TabularInline):
@@ -112,39 +89,6 @@ class PredictorAdmin(admin.ModelAdmin):
                    'subject_for_arts', 'subject_for_commerce']
 
 admin.site.register(Predictor, PredictorAdmin)
-
-admin.site.register(Blog, BlogAdmin)
-
-
-class CommentInline(admin.TabularInline):
-    model = Comment
-
-
-class CommentAdmin(admin.ModelAdmin):
-    list_display = ('name', 'body', 'blog', 'created_on', 'active')
-    list_filter = ('active', 'created_on')
-    search_fields = ('name', 'email', 'body')
-    actions = ['approve_comments']
-
-    def approve_comments(self, request, queryset):
-        queryset.update(active=True)
-
-
-admin.site.register(Comment, CommentAdmin)
-
-
-class InterviewInline(admin.TabularInline):
-    model = Interview
-
-
-class InterviewAdmin(admin.ModelAdmin):
-    list_display = ('title', 'slug', 'status', 'created_on')
-    list_filter = ("status",)
-    search_fields = ['title', 'content']
-    prepopulated_fields = {'slug': ('title',)}
-
-
-admin.site.register(Interview, InterviewAdmin)
 
 
 
