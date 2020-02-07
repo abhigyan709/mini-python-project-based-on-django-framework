@@ -11,7 +11,6 @@ urlpatterns = [
     path('language/', views.LanguageListView.as_view(), name = 'language'),
     path('genre/', views.GenreListView.as_view(), name = 'genre'),
     path('signup/', views.SignUp.as_view(), name='signup'),
-    path('interview/', views.InterviewListView.as_view(), name='interview'),
 
 ]
 urlpatterns += [
@@ -39,16 +38,4 @@ urlpatterns += [
 ]
 urlpatterns += [
     path('predictor', views.PredictorClass.as_view(), name='predictor'),
-]
-urlpatterns += [
-    path('donate', views.DonateClass.as_view(), name='donate'),
-]
-
-urlpatterns += [
-    path('blog/', views.BlogListView.as_view(), name='blog'),
-    path('<slug:slug>', views.BlogDetailView.as_view(), name='blog_detail'),
-]
-urlpatterns += [
-    path('blog/create', views.BlogCreateClass.as_view(), name='blog_create'),
-    path('interview/create', views.InterviewCreateClass.as_view(), name='interview_create')
 ]

@@ -109,74 +109,6 @@ class Visitor(models.Model):
     message = models.CharField(max_length=1000)
 
 
-class Donate(models.Model):
-    book = models.CharField(max_length = 100)
-    author = models.CharField(max_length = 100)
-    language = models.CharField(max_length=100, default="English")
-    copies = models.IntegerField(default=1)
-    edition = models.CharField(max_length=100)
-    price = models.DecimalField(max_digits= 7, decimal_places=2)
-    email = models.EmailField()
-    phone = models.CharField(max_length=100)
-    donator_name = models.CharField(max_length=100, default="Your Name")
-    donate_for_free = models.CharField(max_length=5, default="Yes")
-
-
-class Blog(models.Model):
-    title = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
-    updated_on = models.DateTimeField(auto_now=True)
-    content = models.TextField()
-    image = models.ImageField(default="yes")
-    created_on = models.DateTimeField(auto_now_add=True)
-    status = models.IntegerField(choices=STATUS, default=0)
-
-    class Meta:
-        ordering = ['-created_on']
-
-    def __str__(self):
-        return self.title
-
-    def get_absolute_url(self):
-        return reverse('blog', )
-
-
-class Interview(models.Model):
-    title = models.CharField(max_length=300, unique=True)
-    slug = models.SlugField(max_length=300, unique=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
-    updated_on = models.DateTimeField(auto_now=True)
-    content = models.TextField()
-    image = models.ImageField(default="yes")
-    created_on = models.DateTimeField(auto_now_add=True)
-    status = models.IntegerField(choices=STATUS, default=0)
-
-    class Meta:
-        ordering = ['-created_on']
-
-    def __str__(self):
-        return self.title
-
-    def get_absolute_url(self):
-        return reverse('interview', )
-
-
-class Comment(models.Model):
-    blog = models.ForeignKey(Blog,on_delete=models.CASCADE,related_name='comments')
-    name = models.CharField(max_length=100)
-    email = models.EmailField()
-    body = models.TextField()
-    created_on = models.DateTimeField(auto_now_add=True)
-    active = models.BooleanField(default=False)
-
-    class Meta:
-        ordering = ['created_on']
-
-    def __str__(self):
-        return 'Comment {} by {}'.format(self.body, self.name)
-
-
 GENDER = (
         (0, "Male"),
         (1, "Female")
@@ -434,7 +366,7 @@ class Predictor(models.Model):
         default='low',
         help_text = "What is your Family's Income"
     )
-    extra_curriculum_activity = models.TextField(max_length=5000, default="Mention, if you have any other extra curriculum activity.")
+    extra_curriculum_activity = models.TextField(max_length=500, default="Mention, if you have any other extra curriculum activity.")
     language_of_communication = models.CharField(max_length=50, default="Hindi")
     do_you_enjoy_logical_thinking_and_reasoning = models.CharField(
         max_length=25,
@@ -548,19 +480,21 @@ class Predictor(models.Model):
         default='notMuch',
         help_text = "Are you interested in agriculture ?"
     )
-    are_you_interested_to_work_with_different_culture_community_and_religions_across_the_country = models.CharField(
+    interested_with_community_and_religions_across_the_country = models.CharField(
         max_length=25,
         choices=RELIGION,
+        db_column= 'culture_and_community',
         blank=False,
         default='notMuch',
-        help_text = "Are you interested to work with different culture,community & religions across the country ?"
+        help_text = "Interested with different community & religions across the country ?"
     )
-    do_you_have_deep_interest_in_Indian_constitution_IPC_CrPC_CPC_and_other_laws_of_India = models.CharField(
+    interest_in_Indian_constitution_IPC_CrPC_CPC_and_other_law = models.CharField(
         max_length=25,
         choices=CONSTITUTION,
+        db_column= 'constitution',
         blank=False,
         default='notMuch',
-        help_text = "Do you have deep interest in Indian constitution,IPC, CrPC,CPC & other laws of India ?"
+        help_text = "Interest in Indian constitution,IPC, CrPC,CPC & other law ?"
     )
     do_you_want_to_work_with_business_people = models.CharField(
         max_length=25,
@@ -583,16 +517,18 @@ class Predictor(models.Model):
         default='mnc',
         help_text = "You want to be _________."
     )
-    do_you_follow_rules_and_regulations_in_every_aspects_of_life = models.CharField(
+    follow_rules_and_regulations_in_every_aspects_of_life = models.CharField(
         max_length=25,
         choices=RULES,
+        db_column= 'rules_and_regulation',
         blank=False,
         default="notMuch",
-        help_text = "Do you follow rules and regulations in every aspects of life ?"
+        help_text = "Follow rules and regulations in every aspects of life ?"
     )
-    do_you_take_interest_in_planning_and_organizing_activity_of_others = models.CharField(
+    interest_in_planning_and_organizing_activity_of_others = models.CharField(
         max_length=25,
         choices=ORGANIZING,
+        db_column= 'planning_and_organizing',
         blank=False,
         default="notMuch",
         help_text = "Do you take interest in planning and organizing activity of others ?"

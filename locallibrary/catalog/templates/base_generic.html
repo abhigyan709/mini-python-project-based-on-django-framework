@@ -1,56 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  {% block title %}<title>Local Library</title>{% endblock %}
+  {% block title %}<title>Career Predictor</title>{% endblock %}
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     {% load static %}
   <link rel="stylesheet" href="{% static 'css/styles2.css' %}">
 </head>
-<body>
+<body >
 <div class="navbar">
+    <a class="active" href="#">Welcome {{ user.get_username }}</a>
   <a class="active" href="{% url 'index' %}">Home</a>
-  <a class="active" href="{% url 'books' %}">Books</a>
-  <a class="active" href="{% url 'authors' %}">Authors</a>
-  <a class="active" href="{% url 'language' %}">Languages</a>
-  <a class="active" href="{% url 'genre' %}">Genres</a>
   <a class="active" href="{% url 'visitor' %}">Contact Us</a>
-  <a class="active" href="{% url 'blog' %}"> Blogs</a>
-  <a class="active" href="{% url 'interview' %}">Interview Questions</a>
-  <a class="active" href="https://www.goapti.in/" target="_blank">GoApti.In</a>
-    {% if perms.catalog.can_mark_returned %}
-    <a class="active" href="#">Superuser View</a>
-    {% endif %}
-  <div class="dropdown">
-      {% load static %}
-      <script src="{% static '/js/script4.js' %}" type="text/javascript"></script>
-  <button class="dropbtn" onclick="myFunction()">More
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-content" id="myDropdown">
-      <a class="active" href="#">Hello {{ user.get_username }}</a>
-      {% if user.is_staff %}
-   {% if perms.catalog.can_mark_returned %}
-   <a class="active" href="{% url 'all-borrowed' %}">Borrowers</a>
-   <a class="active" href="{% url 'author_create' %}">Create Author</a>
-   <a class="active" href="{% url 'book_create' %}">Add Book</a>
-   <a class="active" href="{% url 'blog_create' %}">Add Blog</a>
-   <a class="active" href="{% url 'interview_create' %}"> Add Interview</a>
-   <a class="active" href="http://localhost:8000/admin/login/?next=/admin/" target="_blank">Admin Site</a>
-    {% endif %}
-    {% endif %}
-      {% if user.is_authenticated %}
-     <a class="active" href="{% url 'donate' %}">Donate Books </a>
-     <a class="active" href="{% url 'my-borrowed' %}">My Borrowed</a>
+    {% if user.is_authenticated %}
      <a class="active" href="{% url 'predictor' %}">Career Predictor</a>
      <a href="{% url 'logout'%}?next={{request.path}}">Logout</a>
    {% else %}
      <a class="active" href="{% url 'login'%}?next={{request.path}}">Login</a>
      <a class="active" href="{% url 'signup' %}">Sign Up</a>
    {% endif %}
-  </div>
-  </div>
+    {% if perms.catalog.can_mark_returned %}
+    <a class="active" href="http://localhost:8000/admin/login/?next=/admin/" target="_blank">Admin Site</a>
+    {% endif %}
 </div>
   <div class="container-fluid">
     <div class="row">
