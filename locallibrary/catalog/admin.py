@@ -3,7 +3,7 @@ from .models import Author, Book
 from .models import Genre, Language
 from .models import BookInstance
 from .models import Visitor
-from .models import Patient, Disease, Doctor
+from .models import Patient, Disease, Doctor, Department
 
 
 class VisitorInline(admin.TabularInline):
@@ -56,6 +56,7 @@ admin.site.register(Language)
 admin.site.register(Patient)
 admin.site.register(Doctor)
 admin.site.register(Disease)
+admin.site.register(Department)
 
 
 

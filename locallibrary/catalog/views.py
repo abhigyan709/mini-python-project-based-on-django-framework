@@ -9,7 +9,7 @@ from django.contrib.auth.decorators import permission_required
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from . forms import RenewBookForm
 from django.contrib.auth.forms import UserCreationForm
-from . forms import VisitorForm
+from . forms import VisitorForm, PatientForm
 
 
 def index(request):

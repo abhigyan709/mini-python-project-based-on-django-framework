@@ -132,23 +132,47 @@ class Patient(models.Model):
     treatment_Under = models.ForeignKey('doctor', on_delete=models.SET_NULL, null=True)
     disease_Type = models.ForeignKey('disease', on_delete=models.SET_NULL, null=True)
 
+
     class Meta:
         ordering = ['first_Name', 'last_Name']
 
     def __str__(self):
         return f'{self.first_Name} {self.last_Name}'
 
+DEPARTMENTS = (
+    ('Cardiologist', "Cardiologist"), ('Neurologist', "Neurologist"), ('Pediatrics', "Pediatrics"),
+    ('Surgeon', "Surgeon"), ('Physician', "Physician"), ('Gaenocologist', "Gaenocologist"),
+    ('Dermatologist', "Dermatologist"),
+    ('Dentist', "Dentist")
+
+)
+
+
+class Department(models.Model):
+    name = models.CharField(
+        max_length=20,
+        choices=DEPARTMENTS,
+        blank=False,
+        default='Physician',
+        unique=True
+    )
+
+    def __str__(self):
+        return f'{self.name}'
 
 class Doctor(models.Model):
     first_Name = models.CharField(max_length=200, default=None)
     last_Name = models.CharField(max_length=200, default=None)
+    department = models.ManyToManyField(Department, default=None)
     gender = models.CharField(
         max_length=20,
         choices=GENDER,
         blank=False,
         default='m'
     )
-    licence_Number = models.CharField(max_length=20, primary_key= True,  default=None, unique=True)
+    license_Number = models.CharField(max_length=25, default=None, unique=True)
+
+
 
     class Meta:
         ordering = ['first_Name', 'last_Name']
