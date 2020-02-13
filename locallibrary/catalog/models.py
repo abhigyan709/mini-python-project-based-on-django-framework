@@ -129,8 +129,9 @@ class Patient(models.Model):
     )
     aadhar_ID = models.CharField(max_length=12, primary_key=True, editable=True, default=None)
     phone_Number = models.CharField(max_length=12, default=None, editable=True, unique=True)
-    treatment_Under = models.ForeignKey('doctor', on_delete=models.SET_NULL, null=True)
+    treatment_Under = models.ForeignKey('doctor', on_delete=models.CASCADE, null=True)
     disease_Type = models.ForeignKey('disease', on_delete=models.SET_NULL, null=True)
+
 
 
     class Meta:

@@ -1,39 +1,21 @@
 {% extends "base_generic.html" %}
+
 {% block content %}
-{% load static %}
-      <script src="{% static '/js/script.js' %}" type="text/javascript"></script>
-  <div align="center">
-<FONT color="black" size="+2">
-   <MARQUEE bgcolor="white"
-       direction="left" loop="120" width="100%"><STRONG>Welcome to Career Predictor Web Application🏫, a web-app developed by <em> Team Django👦🏻</em>!</STRONG></MARQUEE></FONT></DIV>
-
-<div align="left">
-  <h4 style="color: tomato;
-  font-family: courier;
-  font-size: 120%;">You have visited this page {{ num_visits }}{% if num_visits == 1 %} time{% else %} times{% endif %}.</h4>
-  <div>
-    <style>
-.button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-</style>
-    <button type="button" class="button" onclick="document.getElementById('demo').innerHTML = Date()"> Click here to display Date and Time.</button>
-    <p id="demo"></p>
+{% load widget_tweaks %}
+  <form action="" method="post">
+    {% csrf_token %}
+    <table>
+    {{ form.as_table }}
+    </table>
+    <div>
+    <style> .button
+    {
+    background-color: #4CAF50; border: none; color: white;
+    padding: 15px 32px; text-align: center; text-decoration: none;
+    display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;
+    }
+    </style>
+    <button type="submit" class="button">Submit</button>
   </div>
-</div>
-<div align="center">
-<h5 style="color: green;
-  font-family: courier;
-  font-size: 120%;">More updates on the Website are Coming Soon, Stay Tuned. Thankyou For Visiting this Project.</h5>
-</div>
+  </form>
 {% endblock %}
-

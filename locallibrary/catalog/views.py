@@ -1,5 +1,5 @@
 import datetime
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from . models import Book, Author, BookInstance, Genre, Language
 from django.views import generic
 from django.urls import reverse, reverse_lazy
@@ -13,23 +13,15 @@ from . forms import VisitorForm, PatientForm
 
 
 def index(request):
-    num_books = Book.objects.all().count()
-    num_instances = BookInstance.objects.all().count()
-    num_instances_available = BookInstance.objects.filter(status__exact='a').count()
-    num_authors = Author.objects.count()
-    num_languages = Language.objects.count()
-    num_genres = Genre.objects.count()
-    num_visits = request.session.get('num_visits', 0)
-    request.session['num_visits'] = num_visits+1
-    context = {
-        'num_books': num_books,
-        'num_instances': num_instances,
-        'num_instances_available': num_instances_available,
-        'num_authors': num_authors,
-        'num_visits': num_visits,
-        'num_languages': num_languages,
-        'num_genres': num_genres,
-    }
+    context = {}
+    if request.method == "POST":
+        form = PatientForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
+    else:
+        form = PatientForm
+    context['form'] = form
     return render(request, 'index.html', context=context)
 
 
@@ -157,6 +149,8 @@ class VisitorClass(generic.CreateView):
     form_class = VisitorForm
     success_url = reverse_lazy('index')
     template_name = 'catalog/visitor_form.html'
+
+
 
 
 
