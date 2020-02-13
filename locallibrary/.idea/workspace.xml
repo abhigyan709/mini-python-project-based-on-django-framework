@@ -2,46 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0021_auto_20200213_1323.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0022_auto_20200213_1328.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0023_auto_20200213_1351.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0024_auto_20200213_1354.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0025_auto_20200213_2039.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0026_auto_20200213_2049.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0027_auto_20200213_2052.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0028_auto_20200213_2052.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0029_auto_20200213_2322.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0021_auto_20191124_0939.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0022_auto_20191124_1158.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0023_auto_20191124_1234.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0024_exam_question.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0025_auto_20191124_2136.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0026_quiz.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0027_topic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0028_delete_topic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0030_predictor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0031_auto_20200206_2222.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0032_predictor_subject_for_arts.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0033_auto_20200206_2249.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0034_auto_20200206_2322.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0035_auto_20200206_2323.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0036_auto_20200206_2324.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0037_auto_20200207_0030.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0038_auto_20200207_0128.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0039_auto_20200207_1137.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0040_delete_donate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0041_delete_blog.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0002_language.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0003_auto_20191017_0117.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0004_book_language.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0005_bookinstance_borrower.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0006_auto_20191018_1049.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0007_about.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0008_auto_20191022_1100.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0009_auto_20191022_1158.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0010_delete_donatebooks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0011_visitor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0012_donate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0013_auto_20191024_1237.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0014_donate_language.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0015_donate_donate_for_free.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0016_blog.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0017_delete_about.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0018_auto_20191120_0111.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0019_comment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0020_interview.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0021_auto_20200213_1323.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0022_auto_20200213_1328.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0023_auto_20200213_1351.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0024_auto_20200213_1354.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0025_auto_20200213_2039.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0026_auto_20200213_2049.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0027_auto_20200213_2052.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0028_auto_20200213_2052.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/migrations/0029_auto_20200213_2322.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/css/styles2.css" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/static/css/styles2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,13 +116,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571202466731</updated>
-    </task>
-    <task id="LOCAL-00036" summary="&quot;Donate Models Successfully Added, need some basic moification ✌&quot;">
-      <created>1571900985794</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1571900985795</updated>
     </task>
     <task id="LOCAL-00037" summary="&quot;Donate Model Modification Level 1&quot;">
       <created>1571903703333</created>
@@ -469,7 +453,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575307053964</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="&quot;Migrating the Projectd data base from db.sqlite3 to MySQL, implementing new ideas&quot;">
+      <created>1581616564491</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1581616564492</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -488,7 +479,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;JavaScript is Running Correctly&quot;" />
     <MESSAGE value="&quot;JavaScript Login error Warning added to Login Page&quot;" />
     <MESSAGE value="&quot;Index page title changed&quot;" />
     <MESSAGE value="&quot;Layout Changed &amp; Bootstrap Removed&quot;" />
@@ -513,13 +503,22 @@
     <MESSAGE value="&quot;Basic Model for Quiz added to Admin Site&quot;" />
     <MESSAGE value="&quot;Temporarily Paused, working on REST API to implement Quiz Model&quot;" />
     <MESSAGE value="&quot;Resuming The Project, working on REST API to implement Quiz Model&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Resuming The Project, working on REST API to implement Quiz Model&quot;" />
+    <MESSAGE value="&quot;Migrating the Projectd data base from db.sqlite3 to MySQL, implementing new ideas&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Migrating the Projectd data base from db.sqlite3 to MySQL, implementing new ideas&quot;" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="252" y="40" key="CommitChangelistDialog2" timestamp="1581616559901">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="252" y="40" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1581616559901" />
     <state x="499" y="150" key="FileChooserDialogImpl" timestamp="1581537269457">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="499" y="141" key="FileChooserDialogImpl/0.30.1536.834@0.30.1536.834" timestamp="1576969092334" />
     <state x="499" y="150" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1581537269457" />
+    <state x="261" y="123" key="Vcs.Push.Dialog.v2" timestamp="1581616575586">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="261" y="123" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1581616575586" />
   </component>
 </project>

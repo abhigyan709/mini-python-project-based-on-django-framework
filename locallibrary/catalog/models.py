@@ -132,14 +132,11 @@ class Patient(models.Model):
     treatment_Under = models.ForeignKey('doctor', on_delete=models.SET_NULL, null=True)
     disease_Type = models.ForeignKey('disease', on_delete=models.SET_NULL, null=True)
 
-
     class Meta:
         ordering = ['first_Name', 'last_Name']
 
-
     def __str__(self):
-        return f'{self.first_Name}, {self.last_Name}'
-
+        return f'{self.first_Name} {self.last_Name}'
 
 
 class Doctor(models.Model):
@@ -151,9 +148,13 @@ class Doctor(models.Model):
         blank=False,
         default='m'
     )
+    licence_Number = models.CharField(max_length=20, primary_key= True,  default=None, unique=True)
+
+    class Meta:
+        ordering = ['first_Name', 'last_Name']
 
     def __str__(self):
-        return f'{self.first_Name}, {self.last_Name}'
+        return f'{self.first_Name} {self.last_Name}'
 
 
 class Disease(models.Model):
