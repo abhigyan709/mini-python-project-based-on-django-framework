@@ -9,7 +9,7 @@ from django.contrib.auth.decorators import permission_required
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from . forms import RenewBookForm
 from django.contrib.auth.forms import UserCreationForm
-from . forms import VisitorForm, PredictorForm
+from . forms import VisitorForm
 
 
 def index(request):
@@ -159,10 +159,6 @@ class VisitorClass(generic.CreateView):
     template_name = 'catalog/visitor_form.html'
 
 
-class PredictorClass(LoginRequiredMixin, generic.CreateView):
-    form_class = PredictorForm
-    success_url = reverse_lazy('index')
-    template_name = 'catalog/predictor.html'
 
 
 
