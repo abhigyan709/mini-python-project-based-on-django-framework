@@ -9,7 +9,7 @@ from django.contrib.auth.decorators import permission_required
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from . forms import RenewBookForm
 from django.contrib.auth.forms import UserCreationForm
-from . forms import VisitorForm, PatientForm
+from . forms import VisitorForm, PatientForm, DoctorForm
 
 
 
@@ -20,7 +20,7 @@ def index(request):
         form = PatientForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return redirect('index')
+            return redirect('patient')
     else:
         form = PatientForm
     context['form'] = form
@@ -141,6 +141,7 @@ class DoctorCreate(PermissionRequiredMixin, CreateView):
     model = Doctor
     fields = '__all__'
     permission_required = 'catalog.USER'
+
 
 
 class AuthorUpdate(PermissionRequiredMixin, UpdateView):

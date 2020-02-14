@@ -36,7 +36,7 @@ class PatientForm(forms.ModelForm):
         fields = "__all__"
 
 
-"""class DoctorForm(forms.ModelForm):
+class DoctorForm(forms.ModelForm):
     class Meta:
         model = Doctor
-        fields = "__all__" """
+        fields = "__all__"

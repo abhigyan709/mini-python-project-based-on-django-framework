@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0002_auto_20200215_0501.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/doctor_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0002_remove_patient_slug_for_detail.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0003_auto_20200215_0259.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0004_auto_20200215_0313.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0005_auto_20200215_0415.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/doctor_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/doctor_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,13 +89,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571202466731</updated>
-    </task>
-    <task id="LOCAL-00043" summary="&quot;Added Emojis&quot;">
-      <created>1571985762705</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1571985762705</updated>
     </task>
     <task id="LOCAL-00044" summary="&quot;Added Emojis&quot;">
       <created>1573769358739</created>
@@ -441,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581720421202</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="&quot;Doctor Details section added&quot;">
+      <created>1581723171018</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1581723171018</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -460,7 +452,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;Bootstraping is Not Working For DropDown&quot;" />
     <MESSAGE value="&quot;stylesheet css file 1 removed&quot;" />
     <MESSAGE value="&quot;Interview Question Views Added to Index Page&quot;" />
     <MESSAGE value="&quot;Interview Model Form Created&quot;" />
@@ -485,13 +476,14 @@
     <MESSAGE value="&quot;Update added&quot;" />
     <MESSAGE value="&quot;Doctor list added&quot;" />
     <MESSAGE value="&quot;Department section updated&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Department section updated&quot;" />
+    <MESSAGE value="&quot;Doctor Details section added&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Doctor Details section added&quot;" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="252" y="40" key="CommitChangelistDialog2" timestamp="1581720420225">
+    <state x="252" y="40" key="CommitChangelistDialog2" timestamp="1581723169627">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="252" y="40" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1581720420225" />
+    <state x="252" y="40" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1581723169627" />
     <state x="499" y="150" key="FileChooserDialogImpl" timestamp="1581709256669">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -501,9 +493,9 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="160" y="40" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1581701302171" />
-    <state x="261" y="123" key="Vcs.Push.Dialog.v2" timestamp="1581720427035">
+    <state x="261" y="123" key="Vcs.Push.Dialog.v2" timestamp="1581723178957">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="261" y="123" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1581720427035" />
+    <state x="261" y="123" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1581723178957" />
   </component>
 </project>
