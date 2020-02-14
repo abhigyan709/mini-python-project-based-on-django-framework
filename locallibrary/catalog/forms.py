@@ -3,7 +3,7 @@ from django import forms
 from django.core.exceptions import ValidationError
 from django.utils.translation import ugettext_lazy as _
 from .models import Visitor
-from .models import Patient
+from .models import Patient, Doctor
 
 
 class RenewBookForm(forms.Form):
@@ -36,3 +36,7 @@ class PatientForm(forms.ModelForm):
         fields = "__all__"
 
 
+"""class DoctorForm(forms.ModelForm):
+    class Meta:
+        model = Doctor
+        fields = "__all__" """

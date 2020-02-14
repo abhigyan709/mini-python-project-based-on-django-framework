@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0003_auto_20200215_0259.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/patient_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/patient_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mydatabase" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/migrations/0004_auto_20200215_0313.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/doctor_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/doctor_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMG_20200213_150906.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0002_patient_picture.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0003_remove_patient_picture.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0002_remove_patient_slug_for_detail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/patient_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/patient_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/patient_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/patient_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/predictor.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
     </list>
@@ -98,13 +97,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571202466731</updated>
-    </task>
-    <task id="LOCAL-00040" summary="&quot;Visitors name changed to Contact Us &amp; Donate to Donate Us&quot;">
-      <created>1571961016478</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1571961016478</updated>
     </task>
     <task id="LOCAL-00041" summary="&quot;Log Out Button Added to Top navigation bar&quot;">
       <created>1571961319603</created>
@@ -442,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581627184380</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="&quot;Update added&quot;">
+      <created>1581716134124</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1581716134125</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -461,7 +460,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;JavaScript Login error Warning added to Login Page&quot;" />
     <MESSAGE value="&quot;Index page title changed&quot;" />
     <MESSAGE value="&quot;Layout Changed &amp; Bootstrap Removed&quot;" />
     <MESSAGE value="&quot;Bootstraping is Not Working For DropDown&quot;" />
@@ -486,13 +484,14 @@
     <MESSAGE value="&quot;Temporarily Paused, working on REST API to implement Quiz Model&quot;" />
     <MESSAGE value="&quot;Resuming The Project, working on REST API to implement Quiz Model&quot;" />
     <MESSAGE value="&quot;Migrating the Projectd data base from db.sqlite3 to MySQL, implementing new ideas&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Migrating the Projectd data base from db.sqlite3 to MySQL, implementing new ideas&quot;" />
+    <MESSAGE value="&quot;Update added&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Update added&quot;" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="252" y="40" key="CommitChangelistDialog2" timestamp="1581627182493">
+    <state x="252" y="40" key="CommitChangelistDialog2" timestamp="1581716132143">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="252" y="40" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1581627182493" />
+    <state x="252" y="40" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1581716132143" />
     <state x="499" y="150" key="FileChooserDialogImpl" timestamp="1581709256669">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -502,9 +501,9 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="160" y="40" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1581701302171" />
-    <state x="261" y="123" key="Vcs.Push.Dialog.v2" timestamp="1581627192969">
+    <state x="261" y="123" key="Vcs.Push.Dialog.v2" timestamp="1581716144822">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="261" y="123" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1581627192969" />
+    <state x="261" y="123" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1581716144822" />
   </component>
 </project>

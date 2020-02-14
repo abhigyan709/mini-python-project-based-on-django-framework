@@ -132,7 +132,7 @@ class Patient(models.Model):
     phone_Number = models.CharField(max_length=12, default=None, editable=True, unique=True)
     treatment_Under = models.ForeignKey('doctor', on_delete=models.CASCADE, null=True)
     disease_Type = models.ForeignKey('disease', on_delete=models.SET_NULL, null=True)
-    short_Detail_of_Problem = models.CharField(max_length=500, blank=False, default=True)
+    short_Detail_of_Problem = models.CharField(max_length=500, blank=False, default=None)
 
 
     class Meta:

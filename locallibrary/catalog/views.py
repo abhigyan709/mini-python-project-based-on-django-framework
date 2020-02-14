@@ -1,6 +1,6 @@
 import datetime
 from django.shortcuts import render, get_object_or_404, redirect
-from . models import Book, Author, BookInstance, Genre, Language, Patient
+from . models import Book, Author, BookInstance, Genre, Language, Patient, Doctor
 from django.views import generic
 from django.urls import reverse, reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
@@ -10,6 +10,7 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from . forms import RenewBookForm
 from django.contrib.auth.forms import UserCreationForm
 from . forms import VisitorForm, PatientForm
+
 
 
 @permission_required('catalog.USER')
@@ -37,6 +38,11 @@ class PatientDetailView(generic.DetailView):
     def patient_detail_view(request, primary_key):
         patient = get_object_or_404(Patient, pk=primary_key)
         return render(request, 'catalog/patient_detail.html', context={'patient': patient})
+
+
+class DoctorListView(generic.ListView):
+    model = Doctor
+    paginate_by = 10
 
 
 class GenreListView(generic.ListView):
@@ -121,6 +127,12 @@ class AuthorCreate(PermissionRequiredMixin, CreateView):
     fields = '__all__'
     initial = {'date_of_death': '05/01/2018'}
     permission_required = 'catalog.can_mark_returned'
+
+
+class DoctorCreate(PermissionRequiredMixin, CreateView):
+    model = Doctor
+    fields = '__all__'
+    permission_required = 'catalog.USER'
 
 
 class AuthorUpdate(PermissionRequiredMixin, UpdateView):
