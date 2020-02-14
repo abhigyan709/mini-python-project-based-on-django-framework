@@ -1,6 +1,6 @@
 import datetime
 from django.shortcuts import render, get_object_or_404, redirect
-from . models import Book, Author, BookInstance, Genre, Language
+from . models import Book, Author, BookInstance, Genre, Language, Patient
 from django.views import generic
 from django.urls import reverse, reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
@@ -12,17 +12,31 @@ from django.contrib.auth.forms import UserCreationForm
 from . forms import VisitorForm, PatientForm
 
 
+@permission_required('catalog.USER')
 def index(request):
     context = {}
     if request.method == "POST":
         form = PatientForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return redirect('home')
+            return redirect('index')
     else:
         form = PatientForm
     context['form'] = form
     return render(request, 'index.html', context=context)
+
+
+class PatientListView(generic.ListView):
+    model = Patient
+    paginate_by = 25
+
+
+class PatientDetailView(generic.DetailView):
+    model = Patient
+
+    def patient_detail_view(request, primary_key):
+        patient = get_object_or_404(Patient, pk=primary_key)
+        return render(request, 'catalog/patient_detail.html', context={'patient': patient})
 
 
 class GenreListView(generic.ListView):
@@ -145,7 +159,7 @@ class SignUp(generic.CreateView):
     template_name = 'catalog/signup.html'
 
 
-class VisitorClass(generic.CreateView):
+class VisitorClass(generic.CreateView, LoginRequiredMixin):
     form_class = VisitorForm
     success_url = reverse_lazy('index')
     template_name = 'catalog/visitor_form.html'

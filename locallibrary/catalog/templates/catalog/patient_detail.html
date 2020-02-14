@@ -1,0 +1,13 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Details of  {{ patient.first_Name }} {{patient.last_Name }}</h1>
+
+  <p><strong>Name:</strong> {{ patient.first_Name }} {{patient.last_Name }} </p>
+  <p><strong>Gender:</strong> {{ patient.gender }}</p>
+  <p><strong>D.O.B:</strong> {{ patient.birth_Date }}</p>
+  <p><strong>AADHAR ID:</strong> {{ patient.aadhar_ID }}</p>
+  <p><strong>Phone:</strong> {{ patient.phone_Number }}</p>
+  <p><strong>Doctor:</strong> {{ patient.treatment_Under }}</p>
+  <p><strong>Disease:</strong> {{ patient.disease_Type }}</p>
+{% endblock %}

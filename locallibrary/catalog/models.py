@@ -110,7 +110,7 @@ class Visitor(models.Model):
 
 
 GENDER = (
-    ('m', "Male"), ('f', "Female"), ('t', "Transgender")
+    ('Male', "Male"), ('Female', "Female"), ('Transgender', "Transgender")
 )
 DISEASE_TYPE = (
     ('inf', "Infectious"), ('def', "Deficiency"), ('her', "Hereditary"),
@@ -127,11 +127,12 @@ class Patient(models.Model):
         blank=False,
         default='m'
     )
+    birth_Date = models.DateField(null=False, blank=False)
     aadhar_ID = models.CharField(max_length=12, primary_key=True, editable=True, default=None)
     phone_Number = models.CharField(max_length=12, default=None, editable=True, unique=True)
     treatment_Under = models.ForeignKey('doctor', on_delete=models.CASCADE, null=True)
     disease_Type = models.ForeignKey('disease', on_delete=models.SET_NULL, null=True)
-
+    short_Detail_of_Problem = models.CharField(max_length=500, blank=False, default=True)
 
 
     class Meta:
@@ -140,12 +141,14 @@ class Patient(models.Model):
     def __str__(self):
         return f'{self.first_Name} {self.last_Name}'
 
+    def get_absolute_url(self):
+        return reverse('patient-detail', args=[str(self.aadhar_ID)])
+
 DEPARTMENTS = (
-    ('Cardiologist', "Cardiologist"), ('Neurologist', "Neurologist"), ('Pediatrics', "Pediatrics"),
-    ('Surgeon', "Surgeon"), ('Physician', "Physician"), ('Gaenocologist', "Gaenocologist"),
+    ('Cardiologist', "Cardiologist"), ('Neurologist', "Neurologist"),
+    ('Pediatrics', "Pediatrics"), ('Surgeon', "Surgeon"), ('Physician', "Physician"), ('Gaenocologist', "Gaenocologist"),
     ('Dermatologist', "Dermatologist"),
     ('Dentist', "Dentist")
-
 )
 
 
@@ -161,6 +164,7 @@ class Department(models.Model):
     def __str__(self):
         return f'{self.name}'
 
+
 class Doctor(models.Model):
     first_Name = models.CharField(max_length=200, default=None)
     last_Name = models.CharField(max_length=200, default=None)
@@ -172,8 +176,6 @@ class Doctor(models.Model):
         default='m'
     )
     license_Number = models.CharField(max_length=25, default=None, unique=True)
-
-
 
     class Meta:
         ordering = ['first_Name', 'last_Name']
