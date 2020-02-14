@@ -7,6 +7,7 @@ urlpatterns = [
     path('books/', views.BookListView.as_view(), name='books'),
     path('patient', views.PatientListView.as_view(), name='patient'),
     path('patient/<int:pk>', views.PatientDetailView.as_view(), name='patient-detail'),
+    path('doctor/<int:pk>', views.DoctorDetailView.as_view(), name='doctor-detail'),
     path('book/<int:pk>', views.BookDetailView.as_view(), name='book-detail'),
     path('authors/', views.AuthorListView.as_view(), name='authors'),
     path('author/<int:pk>', views.AuthorDetailView.as_view(), name='author-detail'),
@@ -30,6 +31,7 @@ urlpatterns += [
 urlpatterns += [
     path('doctor/create/', views.DoctorCreate.as_view(), name="doctor_create"),
     path('doctor', views.DoctorListView.as_view(), name="doctor_list"),
+    path('doctor/<int:pk>', views.DoctorDetailView.as_view(), name="doctor-detail"),
 ]
 urlpatterns += [
     path('book/create/', views.BookCreate.as_view(), name='book_create'),

@@ -45,6 +45,14 @@ class DoctorListView(generic.ListView):
     paginate_by = 10
 
 
+class DoctorDetailView(generic.DetailView):
+    model = Doctor
+
+    def doctor_detail_view(request, primary_key):
+        doctor = get_object_or_404(Doctor, pk=primary_key)
+        return render(request, 'catalog/doctor_detail.html', context={'doctor' : doctor})
+
+
 class GenreListView(generic.ListView):
     model = Genre
     paginate_by = 10

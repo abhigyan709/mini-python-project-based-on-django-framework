@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Details of  {{ doctor.first_Name }} {{doctor.last_Name }}</h1>
+
+  <p><strong>Name:</strong> {{ doctor.first_Name }} {{doctor.last_Name }} </p>
+  <p><strong>doctor:</strong> {{ doctor.gender }}</p>
+
+
+{% endblock %}

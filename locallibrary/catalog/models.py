@@ -164,13 +164,16 @@ class Doctor(models.Model):
         blank=False,
         default='m'
     )
-    license_Number = models.CharField(max_length=25, default=None, unique=True)
+    license_Number = models.CharField(max_length=25, primary_key=True, default=None, editable=True)
 
     class Meta:
         ordering = ['first_Name', 'last_Name']
 
     def __str__(self):
         return f'{self.first_Name} {self.last_Name}'
+
+    def get_absolute_url(self):
+        return reverse('doctor-detail', args=[str(self.license_Number)])
 
 
 class Disease(models.Model):

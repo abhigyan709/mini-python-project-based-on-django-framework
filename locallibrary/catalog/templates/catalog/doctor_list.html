@@ -5,7 +5,7 @@
 <ul>
     {% for doctor in doctor_list %}
       <li style="color: green; font-family: courier; font-size: 100%;">
-        <a href="{{ patient.get_absolute_url }}">{{ doctor.first_Name }} {{doctor.last_Name}}</a><p>Doctor's License ID:</p> ({{doctor.license_Number}})
+        <a href="{{ doctor.get_absolute_url }}">{{ doctor.first_Name }} {{doctor.last_Name}}</a><p>Doctor's License ID:</p> ({{doctor.license_Number}})
       </li>
     {% endfor %}
   </ul>
