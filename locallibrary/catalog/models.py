@@ -144,22 +144,11 @@ class Patient(models.Model):
     def get_absolute_url(self):
         return reverse('patient-detail', args=[str(self.aadhar_ID)])
 
-DEPARTMENTS = (
-    ('Cardiologist', "Cardiologist"), ('Neurologist', "Neurologist"),
-    ('Pediatrics', "Pediatrics"), ('Surgeon', "Surgeon"), ('Physician', "Physician"), ('Gaenocologist', "Gaenocologist"),
-    ('Dermatologist', "Dermatologist"),
-    ('Dentist', "Dentist")
-)
+
 
 
 class Department(models.Model):
-    name = models.CharField(
-        max_length=20,
-        choices=DEPARTMENTS,
-        blank=False,
-        default='Physician',
-        unique=True
-    )
+    name = models.CharField(max_length=100, default=None, null=False)
 
     def __str__(self):
         return f'{self.name}'
