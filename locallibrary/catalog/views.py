@@ -1,6 +1,6 @@
 import datetime
 from django.shortcuts import render, get_object_or_404, redirect
-from . models import Book, Author, BookInstance, Genre, Language, Patient, Doctor
+from . models import Author, BookInstance, Patient, Doctor
 from django.views import generic
 from django.urls import reverse, reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
@@ -9,7 +9,8 @@ from django.contrib.auth.decorators import permission_required
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from . forms import RenewBookForm
 from django.contrib.auth.forms import UserCreationForm
-from . forms import VisitorForm, PatientForm, DoctorForm
+from . forms import PatientForm
+
 
 
 
@@ -53,42 +54,6 @@ class DoctorDetailView(generic.DetailView):
         return render(request, 'catalog/doctor_detail.html', context={'doctor' : doctor})
 
 
-class GenreListView(generic.ListView):
-    model = Genre
-    paginate_by = 10
-
-
-class BookListView(generic.ListView):
-    model = Book
-    paginate_by = 10
-
-
-class LanguageListView(generic.ListView):
-    model = Language
-    paginate_by = 10
-
-
-class BookDetailView(generic.DetailView):
-    model = Book
-
-    def book_detail_view(request, primary_key):
-        book = get_object_or_404(Book, pk=primary_key)
-        return render(request, 'catalog/book_detail.html', context={'book': book})
-
-
-class AuthorListView(generic.ListView):
-    model= Author
-    paginate_by = 10
-
-
-class AuthorDetailView(generic.DetailView):
-    model = Author
-
-    def author_detail_view(request, primary_key):
-        author = get_object_or_404(Author, pk=primary_key)
-        return render(request, 'catalog/author_detail.html', context={'author': author})
-
-
 class LoanedBooksByUserListView(LoginRequiredMixin, generic.ListView):
     model = BookInstance
     template_name = 'catalog/bookinstance_list_borrowed_user.html'
@@ -130,18 +95,10 @@ def renew_book_librarian(request, pk):
     return render(request, 'catalog/book_renew_librarian.html', context)
 
 
-class AuthorCreate(PermissionRequiredMixin, CreateView):
-    model = Author
-    fields = '__all__'
-    initial = {'date_of_death': '05/01/2018'}
-    permission_required = 'catalog.can_mark_returned'
-
-
 class DoctorCreate(PermissionRequiredMixin, CreateView):
     model = Doctor
     fields = '__all__'
     permission_required = 'catalog.USER'
-
 
 
 class AuthorUpdate(PermissionRequiredMixin, UpdateView):
@@ -156,34 +113,11 @@ class AuthorDelete(PermissionRequiredMixin, DeleteView):
     permission_required = 'catalog.can_mark_returned'
 
 
-class BookCreate(PermissionRequiredMixin, CreateView):
-    model = Book
-    fields = '__all__'
-    permission_required = 'catalog.can_mark_returned'
-
-
-class BookUpdate(PermissionRequiredMixin, UpdateView):
-    model = Book
-    fields = '__all__'
-    permission_required = 'catalog.can_mark_returned'
-
-
-class BookDelete(PermissionRequiredMixin, DeleteView):
-    model = Book
-    fields = '__all__'
-    permission_required = 'catalog.can_mark_returned'
-
-
 class SignUp(generic.CreateView):
     form_class = UserCreationForm
     success_url = reverse_lazy('login')
     template_name = 'catalog/signup.html'
 
-
-class VisitorClass(generic.CreateView, LoginRequiredMixin):
-    form_class = VisitorForm
-    success_url = reverse_lazy('index')
-    template_name = 'catalog/visitor_form.html'
 
 
 

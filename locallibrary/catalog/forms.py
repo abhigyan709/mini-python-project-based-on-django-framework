@@ -2,7 +2,6 @@ import datetime
 from django import forms
 from django.core.exceptions import ValidationError
 from django.utils.translation import ugettext_lazy as _
-from .models import Visitor
 from .models import Patient, Doctor
 
 
@@ -22,12 +21,6 @@ class RenewBookForm(forms.Form):
 
         # Remember to alwayas to return the cleaned data
         return data
-
-
-class VisitorForm(forms.ModelForm):
-    class Meta:
-        model = Visitor
-        fields=["name", "phone_number", "email_id", "message"]
 
 
 class PatientForm(forms.ModelForm):

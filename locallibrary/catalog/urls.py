@@ -4,15 +4,9 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name = 'index'),
-    path('books/', views.BookListView.as_view(), name='books'),
     path('patient', views.PatientListView.as_view(), name='patient'),
     path('patient/<int:pk>', views.PatientDetailView.as_view(), name='patient-detail'),
     path('doctor/<int:pk>', views.DoctorDetailView.as_view(), name='doctor-detail'),
-    path('book/<int:pk>', views.BookDetailView.as_view(), name='book-detail'),
-    path('authors/', views.AuthorListView.as_view(), name='authors'),
-    path('author/<int:pk>', views.AuthorDetailView.as_view(), name='author-detail'),
-    path('language/', views.LanguageListView.as_view(), name = 'language'),
-    path('genre/', views.GenreListView.as_view(), name = 'genre'),
     path('signup/', views.SignUp.as_view(), name='signup'),
 
 ]
@@ -24,9 +18,8 @@ urlpatterns += [
     path('book/<uuid:pk>/renew/', views.renew_book_librarian, name='renew-book-librarian'),
 ]
 urlpatterns += [
-    path('author/create/', views.AuthorCreate.as_view(), name='author_create'),
-    path('author/<int:pk>/update/', views.AuthorUpdate.as_view(), name='author_update'),
-    path('author/<int:pk>/delete/', views.AuthorDelete.as_view(), name='author_delete'),
+    #path('author/<int:pk>/update/', views.AuthorUpdate.as_view(), name='author_update'),
+    #path('author/<int:pk>/delete/', views.AuthorDelete.as_view(), name='author_delete'),
 ]
 urlpatterns += [
     path('doctor/create/', views.DoctorCreate.as_view(), name="doctor_create"),
@@ -34,13 +27,6 @@ urlpatterns += [
     path('doctor/<int:pk>', views.DoctorDetailView.as_view(), name="doctor-detail"),
 ]
 urlpatterns += [
-    path('book/create/', views.BookCreate.as_view(), name='book_create'),
-    path('book/<int:pk>/update/', views.BookUpdate.as_view(), name='book_update'),
-    path('book/<int:pk>/delete/', views.BookDelete.as_view(), name='book_delete'),
-]
-urlpatterns += [
     path('signup/', views.SignUp.as_view(), name='signup'),
 ]
-urlpatterns += [
-    path('visitor', views.VisitorClass.as_view(), name='visitor'),
-]
+

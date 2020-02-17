@@ -12,7 +12,8 @@
 <div class="navbar">
     <a class="active" href="#">Welcome {{ user }}</a>
   <a class="active" href="{% url 'index' %}">Add New Patient</a>
-  <a class="active" href="{% url 'visitor' %}">Contact Us</a>
+  <a class="active" href=#>Patient Appointment</a>
+  <a class="active" href=#> Appointment List</a>
     {% if perms.catalog.USER %}
      <a class="active" href="{% url 'patient'%}">Patient List</a>
      <a class="active" href="{% url 'doctor_list' %}">Doctor's List</a>

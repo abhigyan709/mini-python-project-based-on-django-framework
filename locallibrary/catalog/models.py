@@ -10,33 +10,11 @@ STATUS = (
 )
 
 
-class Genre(models.Model):
-    name = models.CharField(max_length=200, help_text='Enter a book genre (e.g Science Fiction)')
-
-    def __str__(self):
-        return self.name
-
-    def get_absolute_url(self):
-        return reverse('genre',)
-
-
-class Language(models.Model):
-    name = models.CharField(max_length=200, help_text="Enter the book's natural language (e.g. English, French, Japanese etc.)")
-
-    def __str__(self):
-        return self.name
-
-    def get_absolute_url(self):
-        return reverse('language',)
-
-
 class Book(models.Model):
     title = models.CharField(max_length=200)
     author = models.ForeignKey('Author', on_delete=models.SET_NULL, null=True)
     summary = models.TextField(max_length=1000, help_text='Enter a brief description os the book')
     isbn = models.CharField('ISBN',max_length=13,help_text='13 Character ISBN number. International Standard Book Number.')
-    genre = models.ManyToManyField(Genre, help_text='Select a genre for this Boook')
-    language = models.ForeignKey('Language', on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
         return self.title
@@ -102,13 +80,6 @@ class Author(models.Model):
         return f'{self.first_name}, {self.last_name}'
 
 
-class Visitor(models.Model):
-    name = models.CharField(max_length=200)
-    phone_number = models.CharField(max_length=13)
-    email_id = models.EmailField()
-    message = models.CharField(max_length=1000)
-
-
 GENDER = (
     ('Male', "Male"), ('Female', "Female"), ('Transgender', "Transgender")
 )
@@ -122,10 +93,7 @@ class Patient(models.Model):
     first_Name = models.CharField(max_length=200, default=None)
     last_Name = models.CharField(max_length=200, default=None)
     gender = models.CharField(
-        max_length=20,
-        choices=GENDER,
-        blank=False,
-        default='m'
+        max_length=20, choices=GENDER, blank=False, default='Male'
     )
     birth_Date = models.DateField(null=False, blank=False)
     aadhar_ID = models.CharField(max_length=12, primary_key=True, editable=True, default=None)
@@ -133,7 +101,6 @@ class Patient(models.Model):
     treatment_Under = models.ForeignKey('doctor', on_delete=models.CASCADE, null=True)
     disease_Type = models.ForeignKey('disease', on_delete=models.SET_NULL, null=True)
     short_Detail_of_Problem = models.CharField(max_length=500, blank=False, default=None)
-
 
     class Meta:
         ordering = ['first_Name', 'last_Name']
@@ -143,8 +110,6 @@ class Patient(models.Model):
 
     def get_absolute_url(self):
         return reverse('patient-detail', args=[str(self.aadhar_ID)])
-
-
 
 
 class Department(models.Model):
@@ -184,6 +149,8 @@ class Disease(models.Model):
         blank=False,
         default='non'
     )
+    description = models.TextField(max_length=300, default=None)
 
     def __str__(self):
         return self.name
+
