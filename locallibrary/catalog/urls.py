@@ -26,7 +26,4 @@ urlpatterns += [
     path('doctor', views.DoctorListView.as_view(), name="doctor_list"),
     path('doctor/<int:pk>', views.DoctorDetailView.as_view(), name="doctor-detail"),
 ]
-urlpatterns += [
-    path('signup/', views.SignUp.as_view(), name='signup'),
-]
 
