@@ -101,6 +101,8 @@ class Patient(models.Model):
     treatment_Under = models.ForeignKey('doctor', on_delete=models.CASCADE, null=True)
     disease_Type = models.ForeignKey('disease', on_delete=models.SET_NULL, null=True)
     short_Detail_of_Problem = models.TextField(max_length=500, blank=False, default=None)
+    image = models.ImageField(upload_to='images/', null=True, blank=True)
+
 
     class Meta:
         ordering = ['first_Name', 'last_Name']

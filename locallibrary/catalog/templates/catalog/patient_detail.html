@@ -11,5 +11,6 @@
   <p><strong>Doctor:</strong> {{ patient.treatment_Under }}</p>
   <p><strong>Disease:</strong> {{ patient.disease_Type }}</p>
   <p><strong>Problem:</strong> {{ patient.short_Detail_of_Problem }}</p>
+  <img src="{{patient.image.url}}" class="img-responsive" alt="Image">
 
 {% endblock %}

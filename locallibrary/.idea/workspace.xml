@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0006_auto_20200218_1156.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/migrations/0002_patient_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/31113925_931171027065400_3792866661111955456_o_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/canvas_1586340298711.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/css/styles2.css" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/static/css/styles2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/book_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/patient_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/patient_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +55,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
