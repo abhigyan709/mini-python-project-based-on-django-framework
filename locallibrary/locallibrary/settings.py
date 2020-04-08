@@ -40,10 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'jquery',
-    'crispy_forms',
+    #'crispy_forms',
     'widget_tweaks',
-    'rest_framework',
+    #'rest_framework',
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 MIDDLEWARE = [
@@ -86,7 +85,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'hospital',
         'USER' : 'root',
-        'PASSWORD' : 'abhigyan_709',
+        'PASSWORD' : '1999',
         'HOST' : 'localhost',
         'PORT' : '3306',
     }
