@@ -81,7 +81,9 @@ class Author(models.Model):
 
 
 GENDER = (
-    ('Male', "Male"), ('Female', "Female"), ('Transgender', "Transgender")
+    ('Male', "Male"),
+    ('Female', "Female"),
+    ('Transgender', "Transgender")
 )
 DISEASE_TYPE = (
     ('inf', "Infectious"), ('def', "Deficiency"), ('her', "Hereditary"),
@@ -132,6 +134,7 @@ class Doctor(models.Model):
         default='m'
     )
     license_Number = models.CharField(max_length=25, primary_key=True, default=None, editable=True)
+    image2 = models.ImageField(upload_to='images/', null=True, blank=True)
 
     class Meta:
         ordering = ['first_Name', 'last_Name']

@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ff6dd67-38ae-4de5-9708-4bf384473274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/catalog/migrations/0002_patient_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/31113925_931171027065400_3792866661111955456_o_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/canvas_1586340298711.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/migrations/0003_doctor_image2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/31113925_931171027065400_3792866661111955456_o_1_wTxGDEv.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/book_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/doctor_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/doctor_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/doctor_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/doctor_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/patient_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/patient_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +54,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/django-diy-blog-master" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="Push.Settings">
@@ -96,13 +93,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571202466731</updated>
-    </task>
-    <task id="LOCAL-00048" summary="&quot;Blog Counter Addes to Index Page&quot;">
-      <created>1574190629492</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1574190629492</updated>
     </task>
     <task id="LOCAL-00049" summary="&quot;Useless About Model Removed&quot;">
       <created>1574192615798</created>
@@ -440,7 +430,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581964059492</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="&quot;Media Section Added&quot;">
+      <created>1586366898313</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1586366898313</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -459,7 +456,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&quot;Interview Model Form Created&quot;" />
     <MESSAGE value="&quot;Interview Create Front End Created.&quot;" />
     <MESSAGE value="&quot;User Detail is Showing on DropDown&quot;" />
     <MESSAGE value="&quot;User Details Improved&quot;" />
@@ -484,29 +480,29 @@
     <MESSAGE value="&quot;Doctor Details section added&quot;" />
     <MESSAGE value="&quot;Doctor Details section added reduntant codes removed&quot;" />
     <MESSAGE value="&quot;Reduntant code removed from admin section&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Reduntant code removed from admin section&quot;" />
+    <MESSAGE value="&quot;Media Section Added&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Media Section Added&quot;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="449" y="234" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582007793697">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="449" y="234" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1536.824@0.40.1536.824" timestamp="1582007793697" />
-    <state x="252" y="40" key="CommitChangelistDialog2" timestamp="1581964058451">
+    <state x="252" y="40" key="CommitChangelistDialog2" timestamp="1586366896398">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="252" y="40" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1581964058451" />
-    <state x="499" y="150" key="FileChooserDialogImpl" timestamp="1581709256669">
+    <state x="252" y="40" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1586366896398" />
+    <state x="499" y="150" key="FileChooserDialogImpl" timestamp="1586461931174">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="499" y="141" key="FileChooserDialogImpl/0.30.1536.834@0.30.1536.834" timestamp="1576969092334" />
-    <state x="499" y="150" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1581709256669" />
+    <state x="499" y="150" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1586461931174" />
     <state x="160" y="40" key="SettingsEditor" timestamp="1581790534140">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="160" y="40" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1581790534140" />
-    <state x="261" y="123" key="Vcs.Push.Dialog.v2" timestamp="1581964063664">
+    <state x="261" y="123" key="Vcs.Push.Dialog.v2" timestamp="1586366913929">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="261" y="123" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1581964063664" />
+    <state x="261" y="123" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1586366913929" />
   </component>
 </project>
